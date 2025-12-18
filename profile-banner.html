@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Sabari G</title>
+    <link href="https://fonts.googleapis.com/css?family=Assistant:300,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #ffffff;
+            color: #101828;
+            line-height: 1.6;
+        }
+
+        .profile-header {
+            background-color: #2d3441;
+            color: #ffffff;
+            padding: 1.5rem 6rem;
+            display: flex; margin-left: 10%;margin-right: 10%;
+            align-items: center;
+            gap: 2rem;
+            position: relative;
+        }
+
+        .profile-image {
+            width:150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid rgba(255, 255, 255, 0.2);
+            flex-shrink: 0;
+        }
+
+        .profile-info {
+            flex: 1;
+        }
+
+        .profile-name {
+            font-size: 42px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 0.5rem;
+        }
+
+        .profile-title {
+            font-size: 18px;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 0.3rem;
+        }
+
+        .profile-email {
+            font-size: 16px;
+            font-weight: 300;
+            color: rgba(255, 255, 255, 0.8);
+            margin-top: 1rem;
+        }
+
+        .profile-links {
+            margin-top: 1.5rem;
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .profile-links a {
+            color: rgba(255, 255, 255, 0.9);
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 400;
+            transition: color 0.3s ease;
+        }
+
+        .profile-links a:hover {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+
+        .settings-icon {
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .settings-icon:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .settings-icon i {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 18px;
+        }
+
+        .profile-body {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 4rem 5rem;
+        }
+
+        .section-title {
+            font-size: 32px;
+            font-weight: 700;
+            color: #0f172a;
+            margin-bottom: 2rem;
+            margin-top: 3rem;
+        }
+
+        .section-title:first-of-type {
+            margin-top: 0;
+        }
+
+        .biography-text {
+            font-size: 16px;
+            font-weight: 400;
+            color: #0f172a;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+
+        .biography-text a {
+            color: #0f172a;
+            text-decoration: underline;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .biography-text a:hover {
+            color: #475467;
+        }
+
+        .back-button {
+            position: fixed;
+            top: 2rem;
+            left: 2rem;
+            z-index: 1000;
+            border: 2px solid #0f172a;
+            color: #0f172a;
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 400;
+            transition: background-color 0.5s ease-out, color 0.5s ease-out;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .back-button:hover {
+            color: #ffffff;
+            background-color: #0f172a;
+        }
+
+        .research-item {
+            margin-bottom: 2.5rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid rgba(15, 23, 42, 0.1);
+        }
+
+        .research-item:last-child {
+            border-bottom: none;
+        }
+
+        .research-title {
+            font-size: 20px;
+            font-weight: 600;
+            color: #0f172a;
+            margin-bottom: 0.8rem;
+        }
+
+        .research-title a {
+            color: #0f172a;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .research-title a:hover {
+            color: #475467;
+            text-decoration: underline;
+        }
+
+        .research-authors {
+            font-size: 15px;
+            font-weight: 400;
+            color: #475467;
+            margin-bottom: 0.8rem;
+        }
+
+        .research-description {
+            font-size: 15px;
+            font-weight: 400;
+            color: #0f172a;
+            line-height: 1.7;
+        }
+
+        .research-description a {
+            color: #0f172a;
+            text-decoration: underline;
+            font-weight: 600;
+        }
+
+        .research-description a:hover {
+            color: #475467;
+        }
+
+        @media (max-width: 768px) {
+            .profile-header {
+                flex-direction: column;
+                text-align: center;
+                padding: 3rem 2rem;
+            }
+
+            .profile-image {
+                width: 150px;
+                height: 150px;
+            }
+
+            .profile-name {
+                font-size: 32px;
+            }
+
+            .profile-body {
+                padding: 3rem 2rem;
+            }
+
+            .settings-icon {
+                top: 1rem;
+                right: 1rem;
+            }
+
+            .back-button {
+                top: 1rem;
+                left: 1rem;
+                padding: 8px 16px;
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back-button">← Back to Portfolio</a>
+
+    <div class="profile-header">
+        <img src="img/profile.jpg" alt="Sabari G" class="profile-image">
+        <div class="profile-info">
+            <h1 class="profile-name">Sabari G</h1>
+            <div style="font-size: 20px; font-weight: 400; color: rgba(255, 255, 255, 0.8); margin-bottom: 0.3rem;" class="profile-title">AI/ML Engineering and Finance</div>
+            <div style="font-size: 20px; font-weight: 400; color: rgba(255, 255, 255, 0.8); margin-top: -0.5rem;" class="profile-title">Viyona Fintech</div>
+            <div class="profile-email">sabariguru47@gmail.com</div>
+            <div class="profile-links">
+                <a href="https://leetcode.com/u/sabari_g/" target="_blank">Leetcode</a>
+                <a href="https://g.dev/sabari-server" target="_blank">Google for developers</a>                <a href="https://www.linkedin.com/in/sabari-g-24072002ya/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/sabari-ui" target="_blank">GitHub</a>
+            </div>
+        </div>
+        <div class="settings-icon">
+            <i class="fa fa-cog"></i>
+        </div>
+    </div>
+
+    <div class="profile-body">
+        <h2 class="section-title">Biography</h2>
+        <div class="biography-text">
+            <p>
+                I'm an <a href="#">AI/ML Engineer</a> at <a href="#">Viyona Fintech</a>, where I build resilient payment intelligence systems, GenAI copilots, and automation frameworks. I hold an <a href="#">MBA in Finance</a> and specialize in applying machine learning to financial technology challenges.
+            </p>
+            <p>
+                My work focuses on developing production-grade AI systems for payment processing, risk assessment, and financial automation. I'm passionate about creating intelligent systems that enhance decision-making while maintaining high standards for reliability and performance.
+            </p>
+            <p>
+                Previously, I've worked on building scalable ML pipelines, implementing real-time fraud detection systems, and developing GenAI applications for financial services. I'm a former <a href="#">Data Science Scholar</a> and hold expertise in <a href="#">Deep Learning</a>, <a href="#">NLP</a>, and <a href="#">Cloud Infrastructure</a>.
+            </p>
+            <p>
+                When I'm not coding, I focus on disciplined routines, continuous learning, and contributing to open-source projects. I believe in building systems that are both technically excellent and practically impactful.
+            </p>
+        </div>
+
+        <h2 class="section-title">Research</h2>
+        
+        <div class="research-item">
+            <div class="research-title">
+                <a href="#">Payment Intelligence Systems: A Machine Learning Approach to Fraud Detection</a>
+            </div>
+            <div class="research-authors">
+                Sabari G, et al.
+            </div>
+            <div class="research-description">
+                We present a novel machine learning framework for real-time fraud detection in payment processing systems. Our approach combines ensemble methods with deep learning architectures to achieve high accuracy while maintaining low latency. The system has been deployed in production and processes millions of transactions daily with a false positive rate below 0.1%.
+            </div>
+        </div>
+
+        <div class="research-item">
+            <div class="research-title">
+                <a href="#">Retrieval-Augmented Generation for Financial Document Analysis</a>
+            </div>
+            <div class="research-authors">
+                Sabari G, et al.
+            </div>
+            <div class="research-description">
+                This work explores the application of RAG (Retrieval-Augmented Generation) architectures for analyzing financial documents. We demonstrate how vector databases combined with large language models can provide accurate, context-aware responses for financial queries. The system uses <a href="#">pgvector</a> for efficient similarity search and <a href="#">Ollama</a> for local LLM inference, achieving state-of-the-art performance on financial Q&A tasks.
+            </div>
+        </div>
+
+        <div class="research-item">
+            <div class="research-title">
+                <a href="#">Scalable ML Pipelines for Fintech Applications</a>
+            </div>
+            <div class="research-authors">
+                Sabari G, et al.
+            </div>
+            <div class="research-description">
+                We describe the architecture and implementation of production-grade machine learning pipelines for financial technology applications. The system leverages containerization, orchestration tools, and cloud infrastructure to enable rapid model deployment and scaling. Key contributions include automated model versioning, A/B testing frameworks, and real-time monitoring capabilities.
+            </div>
+        </div>
+
+        <div class="research-item">
+            <div class="research-title">
+                <a href="#">GenAI Copilots for Financial Automation</a>
+            </div>
+            <div class="research-authors">
+                Sabari G, et al.
+            </div>
+            <div class="research-description">
+                This paper introduces a framework for building GenAI-powered copilots that assist in financial decision-making and automation tasks. We explore how large language models can be fine-tuned and integrated with financial data systems to provide intelligent assistance while maintaining security and compliance standards. The system has been successfully deployed in production environments.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
