@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360">
+  <rect width="640" height="360" fill="#111827" rx="24" />
+  <path d="M80 240 Q200 120 320 220 T560 200" fill="none" stroke="#34d399" stroke-width="6" stroke-linecap="round" opacity="0.8" />
+  <path d="M120 280 Q260 180 400 260 T560 260" fill="none" stroke="#22d3ee" stroke-width="6" stroke-linecap="round" opacity="0.6" />
+  <text x="50%" y="45%" fill="#f9fafb" font-family="Inter, Arial, sans-serif" font-size="28" text-anchor="middle">Fresh Blog Idea</text>
+  <text x="50%" y="62%" fill="#d1fae5" font-family="Inter, Arial, sans-serif" font-size="16" text-anchor="middle">Link a Medium post or case study</text>
+</svg>
+
+

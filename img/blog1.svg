@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360">
+  <rect width="640" height="360" fill="#0f172a" rx="24" />
+  <circle cx="520" cy="120" r="48" fill="#38bdf8" opacity="0.4" />
+  <circle cx="120" cy="260" r="64" fill="#67e8f9" opacity="0.25" />
+  <text x="50%" y="45%" fill="#e2e8f0" font-family="Inter, Arial, sans-serif" font-size="28" text-anchor="middle">Blog Feature</text>
+  <text x="50%" y="62%" fill="#cbd5f5" font-family="Inter, Arial, sans-serif" font-size="16" text-anchor="middle">Publish your insights here</text>
+</svg>
+
+
