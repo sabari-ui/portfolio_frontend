@@ -914,8 +914,8 @@ ul.menu-sub{
     .envelope:active,
     .envelope.active {
         color: #ffffff;
-        background: #b62022;
-        border: solid 2px #b62022;
+        background: #dd642c;
+        border: solid 2px #dd642c;
     }
 
     .github:hover,
