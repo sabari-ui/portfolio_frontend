@@ -21,7 +21,8 @@
     <title>Sabari G · Portfolio</title>
 
     <!-- Fonts -->
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Assistant:300,400,600,700" rel="stylesheet">
 
 
@@ -33,10 +34,13 @@
     <link rel="stylesheet" type="text/css" href="css/jquery.fullpage.css" />
 
     <!--Favicon-->
-    <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
 
     <!--Jquery-->
-    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=tFjZCIqx11zqAQHUAbMfFBpyT4BmKITuQ0gkNOJofg_Onxl-XXLN_D77rBevPgHe1KXFIH9D60YGhBjnpCFCeg" charset="UTF-8"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript"
+        src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=tFjZCIqx11zqAQHUAbMfFBpyT4BmKITuQ0gkNOJofg_Onxl-XXLN_D77rBevPgHe1KXFIH9D60YGhBjnpCFCeg"
+        charset="UTF-8"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
     <!-- Full Page -->
@@ -45,30 +49,30 @@
 
     <!-- Full Page Setup -->
     <script type="text/javascript">
-    $(document).ready(function() {
-        $('#fullpage').fullpage({
-            anchors: ['firstPage', 'quotes', 'secondPage', 'about1', 'about2', 'TechStack', '4thPage'],
-            menu: '#menu',
-            afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex) {
-                $('.menu-sub li.active').removeClass('active');
-                $('.menu-sub li').eq(slideIndex).addClass('active');
-            },
-            afterLoad: function(anchorLink, index) {
-                if (anchorLink === 'firstPage') {
-                    $('.menu-bottom').removeClass('scrolled');
-                } else {
-                    $('.menu-bottom').addClass('scrolled');
+        $(document).ready(function () {
+            $('#fullpage').fullpage({
+                anchors: ['firstPage', 'quotes', 'chatImage', 'secondPage', 'about1', 'about2', 'TechStack', '4thPage'],
+                menu: '#menu',
+                afterSlideLoad: function (anchorLink, index, slideAnchor, slideIndex) {
+                    $('.menu-sub li.active').removeClass('active');
+                    $('.menu-sub li').eq(slideIndex).addClass('active');
+                },
+                afterLoad: function (anchorLink, index) {
+                    if (anchorLink === 'firstPage') {
+                        $('.menu-bottom').removeClass('scrolled');
+                    } else {
+                        $('.menu-bottom').addClass('scrolled');
+                    }
                 }
-            }
 
+            });
+
+            $('.scroll-down').show("fade");
+            $('.scroll-down')
+                .fadeIn(1000).fadeOut(1000)
+                .fadeIn(1000).fadeOut(1000)
+                .fadeIn(1000);
         });
-
-        $('.scroll-down').show("fade");
-        $('.scroll-down')
-          .fadeIn(1000).fadeOut(1000)
-          .fadeIn(1000).fadeOut(1000)
-          .fadeIn(1000);
-    });
     </script>
 
 
@@ -105,12 +109,14 @@
                         <br>
                         Builder of resilient payment intelligence, GenAI copilots, and disciplined routines. <br>
 
-                    <br>
-                    <button class='rec_button' id="openChatBtn"><b>Ask my Agent about me</b></button>
+                        <br>
+                        <button class='rec_button' id="openChatBtn"><b>Ask my Agent about me</b></button>
 
 
                 </div>
-                <a href="#quotes" data-menuanchor="quotes"><div class="scroll-down"></div></a>
+                <a href="#quotes" data-menuanchor="quotes">
+                    <div class="scroll-down"></div>
+                </a>
             </div>
         </div>
         <div class="section" id="sectionQuotes">
@@ -133,6 +139,20 @@
                 </div>
             </div>
         </div>
+        <div class="section" id="sectionChatImage">
+            <div class="section-wrapper">
+                <div class="year-showcase-section">
+                    <h3 class="year-showcase-title">2025 Project Builds</h3>
+                    <div class="year-showcase-content">
+                        <div class="year-number year-left">20</div>
+                        <div class="year-image-container">
+                            <img src="img/chat_fin.jpeg" alt="2025 Project Showcase" class="year-showcase-img" />
+                        </div>
+                        <div class="year-number year-right">25</div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="section" id="section1">
             <div class="chapter-submenu">
                 <ul class="menu-sub">
@@ -150,7 +170,8 @@
                         <div class="left">
                             <h4>Focus 01</h4>
                             <h1>AI/ML Engineering</h1>
-                            <p>I ship models that watch over payments and lending journeys — from feature stores to monitoring dashboards — and keep them honest with evaluation loops.</p>
+                            <p>I ship models that watch over payments and lending journeys — from feature stores to
+                                monitoring dashboards — and keep them honest with evaluation loops.</p>
                             </br>
                             </br>
                             <a href="#3rdPage">
@@ -186,7 +207,8 @@
                         <div class="left">
                             <h4>Focus 02</h4>
                             <h1>Fintech Automation</h1>
-                            <p>Pairing domain knowledge with low-friction automation — workflow APIs, alerting, and ops playbooks — so finance teams can move faster with confidence.</p>
+                            <p>Pairing domain knowledge with low-friction automation — workflow APIs, alerting, and ops
+                                playbooks — so finance teams can move faster with confidence.</p>
                             </br>
                             </br>
                             <a href="#3rdPage">
@@ -222,7 +244,8 @@
                         <div class="left">
                             <h4>Focus 03</h4>
                             <h1>Generative AI Systems</h1>
-                            <p>I prototype RAG agents for support desks, research assistants for analysts, and policy-aligned chat experiences powered by LangChain, LlamaIndex, and LangGraph.</p>
+                            <p>I prototype RAG agents for support desks, research assistants for analysts, and
+                                policy-aligned chat experiences powered by LangChain, LlamaIndex, and LangGraph.</p>
                             </br>
                             </br>
                             <a href="#3rdPage">
@@ -258,7 +281,8 @@
                         <div class="left">
                             <h4>Focus 04</h4>
                             <h1>Cloud & Data Platforms</h1>
-                            <p>AWS, Kubernetes, Kafka, Airflow, and observability stacks keep my deployments calm. Infrastructure is code, metrics are built-in, and rollbacks are rehearsed.</p>
+                            <p>AWS, Kubernetes, Kafka, Airflow, and observability stacks keep my deployments calm.
+                                Infrastructure is code, metrics are built-in, and rollbacks are rehearsed.</p>
                             </br>
                             </br>
                             <a href="#3rdPage">
@@ -294,7 +318,8 @@
                         <div class="left">
                             <h4>Focus 05</h4>
                             <h1>Business & Leadership</h1>
-                            <p>MBA coursework in finance helps me map every model to a business lever. I lead rituals, unblock teams, and write docs that keep priorities aligned.</p>
+                            <p>MBA coursework in finance helps me map every model to a business lever. I lead rituals,
+                                unblock teams, and write docs that keep priorities aligned.</p>
                             </br>
                             </br>
                             <a href="#3rdPage">
@@ -330,7 +355,8 @@
                         <div class="left">
                             <h4>Focus 06</h4>
                             <h1>Wellness & Discipline</h1>
-                            <p>Fitness, mindfulness, and purpose-driven routines fuel the energy behind each build. Strong fundamentals outside the laptop show up in the work.</p>
+                            <p>Fitness, mindfulness, and purpose-driven routines fuel the energy behind each build.
+                                Strong fundamentals outside the laptop show up in the work.</p>
                             </br>
                             </br>
                             <a href="#4thPage">
@@ -367,7 +393,9 @@
             <div class="section-wrapper">
                 <div class="about">
                     <p>
-                        I build intelligent systems for fintech teams and keep a learner’s mindset. By day I’m a full-time AI/ML Engineer at Viyona Fintech in Hyderabad; by night I’m a student pursuing my MBA in Finance at Great Lakes Institute of Management, Chennai. <br/>
+                        I build intelligent systems for fintech teams and keep a learner’s mindset. By day I’m a
+                        full-time AI/ML Engineer at Viyona Fintech in Hyderabad; by night I’m a student pursuing my MBA
+                        in Finance at Great Lakes Institute of Management, Chennai. <br />
                         My work sits at the intersection of risk, automation, and human trust.
                     </p>
 
@@ -377,12 +405,13 @@
                         <div class="team-grid">
                             <div class="team-card">
                                 <h5>Work</h5>
-                                <p>Junior AI/ML Engineer · Viyona Fintech Pvt. Ltd.(2025-Present) <br/>
-                                   Tackling fraud, payment flows, and intelligent automation for finance partners.</p>
+                                <p>Junior AI/ML Engineer · Viyona Fintech Pvt. Ltd.(2025-Present) <br />
+                                    Tackling fraud, payment flows, and intelligent automation for finance partners.</p>
                             </div>
                             <div class="team-card">
                                 <h5>Education</h5>
-                                <p>MBA (Finance) · Great Lakes Institute of Management (2025–Present) <br/>B.Tech · Symbiosis Skills & Professional University (2021–2024)</p>
+                                <p>MBA (Finance) · Great Lakes Institute of Management (2025–Present) <br />B.Tech ·
+                                    Symbiosis Skills & Professional University (2021–2024)</p>
                             </div>
                         </div>
                     </div>
@@ -396,11 +425,13 @@
                         <div class="team-grid">
                             <div class="team-card">
                                 <h5>Leadership</h5>
-                                <p>Member of the Coding Club and Tech Fest volunteer; I enjoy hosting knowledge sessions and mentoring peers who are new to ML.</p>
+                                <p>Member of the Coding Club and Tech Fest volunteer; I enjoy hosting knowledge sessions
+                                    and mentoring peers who are new to ML.</p>
                             </div>
                             <div class="team-card">
                                 <h5>Strengths</h5>
-                                <p>Python · Machine Learning · Generative AI · Product storytelling · Systems thinking · Fitness discipline.</p>
+                                <p>Python · Machine Learning · Generative AI · Product storytelling · Systems thinking ·
+                                    Fitness discipline.</p>
                             </div>
                         </div>
                     </div>
@@ -434,136 +465,263 @@
                     <div class="stack-logos">
                         <div class="stack-row stack-row-top">
                             <div class="stack-track">
-                                <img src="img/python.png" alt="Python" data-project="ML Model Pipeline" data-impact="Reduced model training time by 35% with optimized data preprocessing">
-                                <img src="img/pytorch.jpg" alt="PyTorch" data-project="Deep Learning Framework" data-impact="Improved model accuracy by 12% using custom loss functions">
-                                <img src="img/LangChain_Logo.png" alt="LangChain" data-project="RAG Copilot System" data-impact="Increased support ticket resolution rate by 45% with AI assistance">
-                                <img src="img/llama_index.png" alt="LlamaIndex" data-project="Knowledge Base Indexing" data-impact="Reduced search latency from 2.5s to 0.3s with vector embeddings">
-                                <img src="img/lang_graph.svg" alt="LangGraph" data-project="Multi-Agent Workflow" data-impact="Automated 60% of manual document processing tasks">
-                                <img src="img/aws%20ec2.png" alt="AWS EC2" data-project="Cloud Infrastructure" data-impact="Reduced infrastructure costs by 28% with auto-scaling">
-                                <img src="img/aws%20lambda.png" alt="AWS Lambda" data-project="Serverless Functions" data-impact="Cut API response time by 50% with event-driven architecture">
-                                <img src="img/aws%20s3.png" alt="AWS S3" data-project="Data Lake Storage" data-impact="Stored 2TB+ of training data with 99.9% availability">
-                                <img src="img/aws%20bedrock.png" alt="AWS Bedrock" data-project="GenAI Integration" data-impact="Deployed LLM features 3x faster with managed APIs">
-                                <img src="img/Docker-Logo.png" alt="Docker" data-project="Containerization" data-impact="Standardized deployments across 5+ environments">
-                                <img src="img/kube.png" alt="Kubernetes" data-project="Container Orchestration" data-impact="Achieved 99.95% uptime with automated failover">
-                                <img src="img/kafka.png" alt="Kafka" data-project="Streaming Pipeline" data-impact="Reduced lag in Kafka pipeline by 40% with optimized consumers">
-                                <img src="img/airflow.png" alt="Airflow" data-project="Workflow Automation" data-impact="Automated 20+ daily ETL jobs with 95% success rate">
-                                <img src="img/sql.png" alt="SQL" data-project="Database Queries" data-impact="Optimized queries reducing execution time by 65%">
-                                <img src="img/no_sql.webp" alt="NoSQL" data-project="Document Store" data-impact="Handled 10M+ transactions with sub-10ms latency">
-                                <img src="img/chromadb.png" alt="ChromaDB" data-project="Vector Database" data-impact="Enabled semantic search with 0.2s average query time">
-                                <img src="img/mlflow.png" alt="MLflow" data-project="ML Experiment Tracking" data-impact="Tracked 500+ model experiments with version control">
-                                <img src="img/pinecone.jpg" alt="Pinecone" data-project="Vector Search" data-impact="Scaled to 1M+ embeddings with 99.9% recall">
-                                <img src="img/pgvector.svg" alt="pgvector" data-project="PostgreSQL Vectors" data-impact="Integrated vector search into existing SQL workflows">
-                                <img src="img/n8n.png" alt="n8n" data-project="Workflow Automation" data-impact="Automated 15+ manual processes saving 20 hours/week">
-                                <img src="img/rest_api.png" alt="REST API" data-project="API Development" data-impact="Built 12+ endpoints serving 1M+ requests/day">
-                                <img src="img/postman.png" alt="Postman" data-project="API Testing" data-impact="Reduced API bug rate by 30% with automated tests">
-                                <img src="img/Prometheus.webp" alt="Prometheus" data-project="Metrics Monitoring" data-impact="Reduced MTTR by 50% with real-time alerts">
-                                <img src="img/Grafana_loki_logo.png" alt="Loki" data-project="Log Aggregation" data-impact="Centralized 100GB+ logs with fast search">
-                                <img src="img/yahoo_finance.webp" alt="Yahoo Finance" data-project="Financial Data Pipeline" data-impact="Ingested 50K+ daily market data points">
-                                <img src="img/Git.png" alt="Git" data-project="Version Control" data-impact="Managed 200+ commits across 10+ repositories">
-                                <img src="img/GitHub_Copilot.png" alt="GitHub Copilot" data-project="AI Pair Programming" data-impact="Increased coding velocity by 25%">
-                                <img src="img/selenium.png" alt="Selenium" data-project="Web Automation" data-impact="Automated 30+ test scenarios reducing QA time">
-                                <img src="img/mcp.jpg" alt="MCP" data-project="Model Context Protocol" data-impact="Enhanced AI agent capabilities with structured data">
-                                <img src="img/ollama.png" alt="Ollama" data-project="Local LLM Deployment" data-impact="Deployed private LLMs with 40% cost reduction">
-                                <img src="img/aplaca.webp" alt="Alpaca" data-project="Fine-Tuned Models" data-impact="Customized models for domain-specific tasks">
+                                <img src="img/python.png" alt="Python" data-project="ML Model Pipeline"
+                                    data-impact="Reduced model training time by 35% with optimized data preprocessing">
+                                <img src="img/pytorch.jpg" alt="PyTorch" data-project="Deep Learning Framework"
+                                    data-impact="Improved model accuracy by 12% using custom loss functions">
+                                <img src="img/LangChain_Logo.png" alt="LangChain" data-project="RAG Copilot System"
+                                    data-impact="Increased support ticket resolution rate by 45% with AI assistance">
+                                <img src="img/llama_index.png" alt="LlamaIndex" data-project="Knowledge Base Indexing"
+                                    data-impact="Reduced search latency from 2.5s to 0.3s with vector embeddings">
+                                <img src="img/lang_graph.svg" alt="LangGraph" data-project="Multi-Agent Workflow"
+                                    data-impact="Automated 60% of manual document processing tasks">
+                                <img src="img/aws%20ec2.png" alt="AWS EC2" data-project="Cloud Infrastructure"
+                                    data-impact="Reduced infrastructure costs by 28% with auto-scaling">
+                                <img src="img/aws%20lambda.png" alt="AWS Lambda" data-project="Serverless Functions"
+                                    data-impact="Cut API response time by 50% with event-driven architecture">
+                                <img src="img/aws%20s3.png" alt="AWS S3" data-project="Data Lake Storage"
+                                    data-impact="Stored 2TB+ of training data with 99.9% availability">
+                                <img src="img/aws%20bedrock.png" alt="AWS Bedrock" data-project="GenAI Integration"
+                                    data-impact="Deployed LLM features 3x faster with managed APIs">
+                                <img src="img/Docker-Logo.png" alt="Docker" data-project="Containerization"
+                                    data-impact="Standardized deployments across 5+ environments">
+                                <img src="img/kube.png" alt="Kubernetes" data-project="Container Orchestration"
+                                    data-impact="Achieved 99.95% uptime with automated failover">
+                                <img src="img/kafka.png" alt="Kafka" data-project="Streaming Pipeline"
+                                    data-impact="Reduced lag in Kafka pipeline by 40% with optimized consumers">
+                                <img src="img/airflow.png" alt="Airflow" data-project="Workflow Automation"
+                                    data-impact="Automated 20+ daily ETL jobs with 95% success rate">
+                                <img src="img/sql.png" alt="SQL" data-project="Database Queries"
+                                    data-impact="Optimized queries reducing execution time by 65%">
+                                <img src="img/no_sql.webp" alt="NoSQL" data-project="Document Store"
+                                    data-impact="Handled 10M+ transactions with sub-10ms latency">
+                                <img src="img/chromadb.png" alt="ChromaDB" data-project="Vector Database"
+                                    data-impact="Enabled semantic search with 0.2s average query time">
+                                <img src="img/mlflow.png" alt="MLflow" data-project="ML Experiment Tracking"
+                                    data-impact="Tracked 500+ model experiments with version control">
+                                <img src="img/pinecone.jpg" alt="Pinecone" data-project="Vector Search"
+                                    data-impact="Scaled to 1M+ embeddings with 99.9% recall">
+                                <img src="img/pgvector.svg" alt="pgvector" data-project="PostgreSQL Vectors"
+                                    data-impact="Integrated vector search into existing SQL workflows">
+                                <img src="img/n8n.png" alt="n8n" data-project="Workflow Automation"
+                                    data-impact="Automated 15+ manual processes saving 20 hours/week">
+                                <img src="img/rest_api.png" alt="REST API" data-project="API Development"
+                                    data-impact="Built 12+ endpoints serving 1M+ requests/day">
+                                <img src="img/postman.png" alt="Postman" data-project="API Testing"
+                                    data-impact="Reduced API bug rate by 30% with automated tests">
+                                <img src="img/Prometheus.webp" alt="Prometheus" data-project="Metrics Monitoring"
+                                    data-impact="Reduced MTTR by 50% with real-time alerts">
+                                <img src="img/Grafana_loki_logo.png" alt="Loki" data-project="Log Aggregation"
+                                    data-impact="Centralized 100GB+ logs with fast search">
+                                <img src="img/yahoo_finance.webp" alt="Yahoo Finance"
+                                    data-project="Financial Data Pipeline"
+                                    data-impact="Ingested 50K+ daily market data points">
+                                <img src="img/Git.png" alt="Git" data-project="Version Control"
+                                    data-impact="Managed 200+ commits across 10+ repositories">
+                                <img src="img/GitHub_Copilot.png" alt="GitHub Copilot"
+                                    data-project="AI Pair Programming" data-impact="Increased coding velocity by 25%">
+                                <img src="img/selenium.png" alt="Selenium" data-project="Web Automation"
+                                    data-impact="Automated 30+ test scenarios reducing QA time">
+                                <img src="img/mcp.jpg" alt="MCP" data-project="Model Context Protocol"
+                                    data-impact="Enhanced AI agent capabilities with structured data">
+                                <img src="img/ollama.png" alt="Ollama" data-project="Local LLM Deployment"
+                                    data-impact="Deployed private LLMs with 40% cost reduction">
+                                <img src="img/aplaca.webp" alt="Alpaca" data-project="Fine-Tuned Models"
+                                    data-impact="Customized models for domain-specific tasks">
                                 <!-- duplicate sequence for seamless scroll -->
-                                <img src="img/python.png" alt="Python" data-project="ML Model Pipeline" data-impact="Reduced model training time by 35% with optimized data preprocessing">
-                                <img src="img/pytorch.jpg" alt="PyTorch" data-project="Deep Learning Framework" data-impact="Improved model accuracy by 12% using custom loss functions">
-                                <img src="img/LangChain_Logo.png" alt="LangChain" data-project="RAG Copilot System" data-impact="Increased support ticket resolution rate by 45% with AI assistance">
-                                <img src="img/llama_index.png" alt="LlamaIndex" data-project="Knowledge Base Indexing" data-impact="Reduced search latency from 2.5s to 0.3s with vector embeddings">
-                                <img src="img/lang_graph.svg" alt="LangGraph" data-project="Multi-Agent Workflow" data-impact="Automated 60% of manual document processing tasks">
-                                <img src="img/aws%20ec2.png" alt="AWS EC2" data-project="Cloud Infrastructure" data-impact="Reduced infrastructure costs by 28% with auto-scaling">
-                                <img src="img/aws%20lambda.png" alt="AWS Lambda" data-project="Serverless Functions" data-impact="Cut API response time by 50% with event-driven architecture">
-                                <img src="img/aws%20s3.png" alt="AWS S3" data-project="Data Lake Storage" data-impact="Stored 2TB+ of training data with 99.9% availability">
-                                <img src="img/aws%20bedrock.png" alt="AWS Bedrock" data-project="GenAI Integration" data-impact="Deployed LLM features 3x faster with managed APIs">
-                                <img src="img/Docker-Logo.png" alt="Docker" data-project="Containerization" data-impact="Standardized deployments across 5+ environments">
-                                <img src="img/kube.png" alt="Kubernetes" data-project="Container Orchestration" data-impact="Achieved 99.95% uptime with automated failover">
-                                <img src="img/kafka.png" alt="Kafka" data-project="Streaming Pipeline" data-impact="Reduced lag in Kafka pipeline by 40% with optimized consumers">
-                                <img src="img/airflow.png" alt="Airflow" data-project="Workflow Automation" data-impact="Automated 20+ daily ETL jobs with 95% success rate">
-                                <img src="img/sql.png" alt="SQL" data-project="Database Queries" data-impact="Optimized queries reducing execution time by 65%">
-                                <img src="img/no_sql.webp" alt="NoSQL" data-project="Document Store" data-impact="Handled 10M+ transactions with sub-10ms latency">
-                                <img src="img/chromadb.png" alt="ChromaDB" data-project="Vector Database" data-impact="Enabled semantic search with 0.2s average query time">
-                                <img src="img/mlflow.png" alt="MLflow" data-project="ML Experiment Tracking" data-impact="Tracked 500+ model experiments with version control">
-                                <img src="img/pinecone.jpg" alt="Pinecone" data-project="Vector Search" data-impact="Scaled to 1M+ embeddings with 99.9% recall">
-                                <img src="img/pgvector.svg" alt="pgvector" data-project="PostgreSQL Vectors" data-impact="Integrated vector search into existing SQL workflows">
-                                <img src="img/n8n.png" alt="n8n" data-project="Workflow Automation" data-impact="Automated 15+ manual processes saving 20 hours/week">
-                                <img src="img/rest_api.png" alt="REST API" data-project="API Development" data-impact="Built 12+ endpoints serving 1M+ requests/day">
-                                <img src="img/postman.png" alt="Postman" data-project="API Testing" data-impact="Reduced API bug rate by 30% with automated tests">
-                                <img src="img/Prometheus.webp" alt="Prometheus" data-project="Metrics Monitoring" data-impact="Reduced MTTR by 50% with real-time alerts">
-                                <img src="img/Grafana_loki_logo.png" alt="Loki" data-project="Log Aggregation" data-impact="Centralized 100GB+ logs with fast search">
-                                <img src="img/yahoo_finance.webp" alt="Yahoo Finance" data-project="Financial Data Pipeline" data-impact="Ingested 50K+ daily market data points">
-                                <img src="img/Git.png" alt="Git" data-project="Version Control" data-impact="Managed 200+ commits across 10+ repositories">
-                                <img src="img/GitHub_Copilot.png" alt="GitHub Copilot" data-project="AI Pair Programming" data-impact="Increased coding velocity by 25%">
-                                <img src="img/selenium.png" alt="Selenium" data-project="Web Automation" data-impact="Automated 30+ test scenarios reducing QA time">
-                                <img src="img/mcp.jpg" alt="MCP" data-project="Model Context Protocol" data-impact="Enhanced AI agent capabilities with structured data">
-                                <img src="img/ollama.png" alt="Ollama" data-project="Local LLM Deployment" data-impact="Deployed private LLMs with 40% cost reduction">
-                                <img src="img/aplaca.webp" alt="Alpaca" data-project="Fine-Tuned Models" data-impact="Customized models for domain-specific tasks">
+                                <img src="img/python.png" alt="Python" data-project="ML Model Pipeline"
+                                    data-impact="Reduced model training time by 35% with optimized data preprocessing">
+                                <img src="img/pytorch.jpg" alt="PyTorch" data-project="Deep Learning Framework"
+                                    data-impact="Improved model accuracy by 12% using custom loss functions">
+                                <img src="img/LangChain_Logo.png" alt="LangChain" data-project="RAG Copilot System"
+                                    data-impact="Increased support ticket resolution rate by 45% with AI assistance">
+                                <img src="img/llama_index.png" alt="LlamaIndex" data-project="Knowledge Base Indexing"
+                                    data-impact="Reduced search latency from 2.5s to 0.3s with vector embeddings">
+                                <img src="img/lang_graph.svg" alt="LangGraph" data-project="Multi-Agent Workflow"
+                                    data-impact="Automated 60% of manual document processing tasks">
+                                <img src="img/aws%20ec2.png" alt="AWS EC2" data-project="Cloud Infrastructure"
+                                    data-impact="Reduced infrastructure costs by 28% with auto-scaling">
+                                <img src="img/aws%20lambda.png" alt="AWS Lambda" data-project="Serverless Functions"
+                                    data-impact="Cut API response time by 50% with event-driven architecture">
+                                <img src="img/aws%20s3.png" alt="AWS S3" data-project="Data Lake Storage"
+                                    data-impact="Stored 2TB+ of training data with 99.9% availability">
+                                <img src="img/aws%20bedrock.png" alt="AWS Bedrock" data-project="GenAI Integration"
+                                    data-impact="Deployed LLM features 3x faster with managed APIs">
+                                <img src="img/Docker-Logo.png" alt="Docker" data-project="Containerization"
+                                    data-impact="Standardized deployments across 5+ environments">
+                                <img src="img/kube.png" alt="Kubernetes" data-project="Container Orchestration"
+                                    data-impact="Achieved 99.95% uptime with automated failover">
+                                <img src="img/kafka.png" alt="Kafka" data-project="Streaming Pipeline"
+                                    data-impact="Reduced lag in Kafka pipeline by 40% with optimized consumers">
+                                <img src="img/airflow.png" alt="Airflow" data-project="Workflow Automation"
+                                    data-impact="Automated 20+ daily ETL jobs with 95% success rate">
+                                <img src="img/sql.png" alt="SQL" data-project="Database Queries"
+                                    data-impact="Optimized queries reducing execution time by 65%">
+                                <img src="img/no_sql.webp" alt="NoSQL" data-project="Document Store"
+                                    data-impact="Handled 10M+ transactions with sub-10ms latency">
+                                <img src="img/chromadb.png" alt="ChromaDB" data-project="Vector Database"
+                                    data-impact="Enabled semantic search with 0.2s average query time">
+                                <img src="img/mlflow.png" alt="MLflow" data-project="ML Experiment Tracking"
+                                    data-impact="Tracked 500+ model experiments with version control">
+                                <img src="img/pinecone.jpg" alt="Pinecone" data-project="Vector Search"
+                                    data-impact="Scaled to 1M+ embeddings with 99.9% recall">
+                                <img src="img/pgvector.svg" alt="pgvector" data-project="PostgreSQL Vectors"
+                                    data-impact="Integrated vector search into existing SQL workflows">
+                                <img src="img/n8n.png" alt="n8n" data-project="Workflow Automation"
+                                    data-impact="Automated 15+ manual processes saving 20 hours/week">
+                                <img src="img/rest_api.png" alt="REST API" data-project="API Development"
+                                    data-impact="Built 12+ endpoints serving 1M+ requests/day">
+                                <img src="img/postman.png" alt="Postman" data-project="API Testing"
+                                    data-impact="Reduced API bug rate by 30% with automated tests">
+                                <img src="img/Prometheus.webp" alt="Prometheus" data-project="Metrics Monitoring"
+                                    data-impact="Reduced MTTR by 50% with real-time alerts">
+                                <img src="img/Grafana_loki_logo.png" alt="Loki" data-project="Log Aggregation"
+                                    data-impact="Centralized 100GB+ logs with fast search">
+                                <img src="img/yahoo_finance.webp" alt="Yahoo Finance"
+                                    data-project="Financial Data Pipeline"
+                                    data-impact="Ingested 50K+ daily market data points">
+                                <img src="img/Git.png" alt="Git" data-project="Version Control"
+                                    data-impact="Managed 200+ commits across 10+ repositories">
+                                <img src="img/GitHub_Copilot.png" alt="GitHub Copilot"
+                                    data-project="AI Pair Programming" data-impact="Increased coding velocity by 25%">
+                                <img src="img/selenium.png" alt="Selenium" data-project="Web Automation"
+                                    data-impact="Automated 30+ test scenarios reducing QA time">
+                                <img src="img/mcp.jpg" alt="MCP" data-project="Model Context Protocol"
+                                    data-impact="Enhanced AI agent capabilities with structured data">
+                                <img src="img/ollama.png" alt="Ollama" data-project="Local LLM Deployment"
+                                    data-impact="Deployed private LLMs with 40% cost reduction">
+                                <img src="img/aplaca.webp" alt="Alpaca" data-project="Fine-Tuned Models"
+                                    data-impact="Customized models for domain-specific tasks">
                             </div>
                         </div>
 
                         <div class="stack-row stack-row-bottom">
                             <div class="stack-track">
-                                <img src="img/airflow.png" alt="Airflow" data-project="Workflow Automation" data-impact="Automated 20+ daily ETL jobs with 95% success rate">
-                                <img src="img/kafka.png" alt="Kafka" data-project="Streaming Pipeline" data-impact="Reduced lag in Kafka pipeline by 40% with optimized consumers">
-                                <img src="img/Grafana_loki_logo.png" alt="Loki" data-project="Log Aggregation" data-impact="Centralized 100GB+ logs with fast search">
-                                <img src="img/Prometheus.webp" alt="Prometheus" data-project="Metrics Monitoring" data-impact="Reduced MTTR by 50% with real-time alerts">
-                                <img src="img/sql.png" alt="SQL" data-project="Database Queries" data-impact="Optimized queries reducing execution time by 65%">
-                                <img src="img/no_sql.webp" alt="NoSQL" data-project="Document Store" data-impact="Handled 10M+ transactions with sub-10ms latency">
-                                <img src="img/chromadb.png" alt="ChromaDB" data-project="Vector Database" data-impact="Enabled semantic search with 0.2s average query time">
-                                <img src="img/pinecone.jpg" alt="Pinecone" data-project="Vector Search" data-impact="Scaled to 1M+ embeddings with 99.9% recall">
-                                <img src="img/pgvector.svg" alt="pgvector" data-project="PostgreSQL Vectors" data-impact="Integrated vector search into existing SQL workflows">
-                                <img src="img/yahoo_finance.webp" alt="Yahoo Finance" data-project="Financial Data Pipeline" data-impact="Ingested 50K+ daily market data points">
-                                <img src="img/LangChain_Logo.png" alt="LangChain" data-project="RAG Copilot System" data-impact="Increased support ticket resolution rate by 45% with AI assistance">
-                                <img src="img/llama_index.png" alt="LlamaIndex" data-project="Knowledge Base Indexing" data-impact="Reduced search latency from 2.5s to 0.3s with vector embeddings">
-                                <img src="img/lang_graph.svg" alt="LangGraph" data-project="Multi-Agent Workflow" data-impact="Automated 60% of manual document processing tasks">
-                                <img src="img/n8n.png" alt="n8n" data-project="Workflow Automation" data-impact="Automated 15+ manual processes saving 20 hours/week">
-                                <img src="img/rest_api.png" alt="REST API" data-project="API Development" data-impact="Built 12+ endpoints serving 1M+ requests/day">
-                                <img src="img/mlflow.png" alt="MLflow" data-project="ML Experiment Tracking" data-impact="Tracked 500+ model experiments with version control">
-                                <img src="img/postman.png" alt="Postman" data-project="API Testing" data-impact="Reduced API bug rate by 30% with automated tests">
-                                <img src="img/aws%20ec2.png" alt="AWS EC2" data-project="Cloud Infrastructure" data-impact="Reduced infrastructure costs by 28% with auto-scaling">
-                                <img src="img/aws%20lambda.png" alt="AWS Lambda" data-project="Serverless Functions" data-impact="Cut API response time by 50% with event-driven architecture">
-                                <img src="img/aws%20s3.png" alt="AWS S3" data-project="Data Lake Storage" data-impact="Stored 2TB+ of training data with 99.9% availability">
-                                <img src="img/aws%20bedrock.png" alt="AWS Bedrock" data-project="GenAI Integration" data-impact="Deployed LLM features 3x faster with managed APIs">
-                                <img src="img/Docker-Logo.png" alt="Docker" data-project="Containerization" data-impact="Standardized deployments across 5+ environments">
-                                <img src="img/kube.png" alt="Kubernetes" data-project="Container Orchestration" data-impact="Achieved 99.95% uptime with automated failover">
-                                <img src="img/Git.png" alt="Git" data-project="Version Control" data-impact="Managed 200+ commits across 10+ repositories">
-                                <img src="img/GitHub_Copilot.png" alt="GitHub Copilot" data-project="AI Pair Programming" data-impact="Increased coding velocity by 25%">
-                                <img src="img/python.png" alt="Python" data-project="ML Model Pipeline" data-impact="Reduced model training time by 35% with optimized data preprocessing">
-                                <img src="img/pytorch.jpg" alt="PyTorch" data-project="Deep Learning Framework" data-impact="Improved model accuracy by 12% using custom loss functions">
-                                <img src="img/selenium.png" alt="Selenium" data-project="Web Automation" data-impact="Automated 30+ test scenarios reducing QA time">
-                                <img src="img/mcp.jpg" alt="MCP" data-project="Model Context Protocol" data-impact="Enhanced AI agent capabilities with structured data">
-                                <img src="img/ollama.png" alt="Ollama" data-project="Local LLM Deployment" data-impact="Deployed private LLMs with 40% cost reduction">
-                                <img src="img/aplaca.webp" alt="Alpaca" data-project="Fine-Tuned Models" data-impact="Customized models for domain-specific tasks">
+                                <img src="img/airflow.png" alt="Airflow" data-project="Workflow Automation"
+                                    data-impact="Automated 20+ daily ETL jobs with 95% success rate">
+                                <img src="img/kafka.png" alt="Kafka" data-project="Streaming Pipeline"
+                                    data-impact="Reduced lag in Kafka pipeline by 40% with optimized consumers">
+                                <img src="img/Grafana_loki_logo.png" alt="Loki" data-project="Log Aggregation"
+                                    data-impact="Centralized 100GB+ logs with fast search">
+                                <img src="img/Prometheus.webp" alt="Prometheus" data-project="Metrics Monitoring"
+                                    data-impact="Reduced MTTR by 50% with real-time alerts">
+                                <img src="img/sql.png" alt="SQL" data-project="Database Queries"
+                                    data-impact="Optimized queries reducing execution time by 65%">
+                                <img src="img/no_sql.webp" alt="NoSQL" data-project="Document Store"
+                                    data-impact="Handled 10M+ transactions with sub-10ms latency">
+                                <img src="img/chromadb.png" alt="ChromaDB" data-project="Vector Database"
+                                    data-impact="Enabled semantic search with 0.2s average query time">
+                                <img src="img/pinecone.jpg" alt="Pinecone" data-project="Vector Search"
+                                    data-impact="Scaled to 1M+ embeddings with 99.9% recall">
+                                <img src="img/pgvector.svg" alt="pgvector" data-project="PostgreSQL Vectors"
+                                    data-impact="Integrated vector search into existing SQL workflows">
+                                <img src="img/yahoo_finance.webp" alt="Yahoo Finance"
+                                    data-project="Financial Data Pipeline"
+                                    data-impact="Ingested 50K+ daily market data points">
+                                <img src="img/LangChain_Logo.png" alt="LangChain" data-project="RAG Copilot System"
+                                    data-impact="Increased support ticket resolution rate by 45% with AI assistance">
+                                <img src="img/llama_index.png" alt="LlamaIndex" data-project="Knowledge Base Indexing"
+                                    data-impact="Reduced search latency from 2.5s to 0.3s with vector embeddings">
+                                <img src="img/lang_graph.svg" alt="LangGraph" data-project="Multi-Agent Workflow"
+                                    data-impact="Automated 60% of manual document processing tasks">
+                                <img src="img/n8n.png" alt="n8n" data-project="Workflow Automation"
+                                    data-impact="Automated 15+ manual processes saving 20 hours/week">
+                                <img src="img/rest_api.png" alt="REST API" data-project="API Development"
+                                    data-impact="Built 12+ endpoints serving 1M+ requests/day">
+                                <img src="img/mlflow.png" alt="MLflow" data-project="ML Experiment Tracking"
+                                    data-impact="Tracked 500+ model experiments with version control">
+                                <img src="img/postman.png" alt="Postman" data-project="API Testing"
+                                    data-impact="Reduced API bug rate by 30% with automated tests">
+                                <img src="img/aws%20ec2.png" alt="AWS EC2" data-project="Cloud Infrastructure"
+                                    data-impact="Reduced infrastructure costs by 28% with auto-scaling">
+                                <img src="img/aws%20lambda.png" alt="AWS Lambda" data-project="Serverless Functions"
+                                    data-impact="Cut API response time by 50% with event-driven architecture">
+                                <img src="img/aws%20s3.png" alt="AWS S3" data-project="Data Lake Storage"
+                                    data-impact="Stored 2TB+ of training data with 99.9% availability">
+                                <img src="img/aws%20bedrock.png" alt="AWS Bedrock" data-project="GenAI Integration"
+                                    data-impact="Deployed LLM features 3x faster with managed APIs">
+                                <img src="img/Docker-Logo.png" alt="Docker" data-project="Containerization"
+                                    data-impact="Standardized deployments across 5+ environments">
+                                <img src="img/kube.png" alt="Kubernetes" data-project="Container Orchestration"
+                                    data-impact="Achieved 99.95% uptime with automated failover">
+                                <img src="img/Git.png" alt="Git" data-project="Version Control"
+                                    data-impact="Managed 200+ commits across 10+ repositories">
+                                <img src="img/GitHub_Copilot.png" alt="GitHub Copilot"
+                                    data-project="AI Pair Programming" data-impact="Increased coding velocity by 25%">
+                                <img src="img/python.png" alt="Python" data-project="ML Model Pipeline"
+                                    data-impact="Reduced model training time by 35% with optimized data preprocessing">
+                                <img src="img/pytorch.jpg" alt="PyTorch" data-project="Deep Learning Framework"
+                                    data-impact="Improved model accuracy by 12% using custom loss functions">
+                                <img src="img/selenium.png" alt="Selenium" data-project="Web Automation"
+                                    data-impact="Automated 30+ test scenarios reducing QA time">
+                                <img src="img/mcp.jpg" alt="MCP" data-project="Model Context Protocol"
+                                    data-impact="Enhanced AI agent capabilities with structured data">
+                                <img src="img/ollama.png" alt="Ollama" data-project="Local LLM Deployment"
+                                    data-impact="Deployed private LLMs with 40% cost reduction">
+                                <img src="img/aplaca.webp" alt="Alpaca" data-project="Fine-Tuned Models"
+                                    data-impact="Customized models for domain-specific tasks">
                                 <!-- duplicate sequence for seamless scroll -->
-                                <img src="img/airflow.png" alt="Airflow" data-project="Workflow Automation" data-impact="Automated 20+ daily ETL jobs with 95% success rate">
-                                <img src="img/kafka.png" alt="Kafka" data-project="Streaming Pipeline" data-impact="Reduced lag in Kafka pipeline by 40% with optimized consumers">
-                                <img src="img/Grafana_loki_logo.png" alt="Loki" data-project="Log Aggregation" data-impact="Centralized 100GB+ logs with fast search">
-                                <img src="img/Prometheus.webp" alt="Prometheus" data-project="Metrics Monitoring" data-impact="Reduced MTTR by 50% with real-time alerts">
-                                <img src="img/sql.png" alt="SQL" data-project="Database Queries" data-impact="Optimized queries reducing execution time by 65%">
-                                <img src="img/no_sql.webp" alt="NoSQL" data-project="Document Store" data-impact="Handled 10M+ transactions with sub-10ms latency">
-                                <img src="img/chromadb.png" alt="ChromaDB" data-project="Vector Database" data-impact="Enabled semantic search with 0.2s average query time">
-                                <img src="img/pinecone.jpg" alt="Pinecone" data-project="Vector Search" data-impact="Scaled to 1M+ embeddings with 99.9% recall">
-                                <img src="img/pgvector.svg" alt="pgvector" data-project="PostgreSQL Vectors" data-impact="Integrated vector search into existing SQL workflows">
-                                <img src="img/yahoo_finance.webp" alt="Yahoo Finance" data-project="Financial Data Pipeline" data-impact="Ingested 50K+ daily market data points">
-                                <img src="img/LangChain_Logo.png" alt="LangChain" data-project="RAG Copilot System" data-impact="Increased support ticket resolution rate by 45% with AI assistance">
-                                <img src="img/llama_index.png" alt="LlamaIndex" data-project="Knowledge Base Indexing" data-impact="Reduced search latency from 2.5s to 0.3s with vector embeddings">
-                                <img src="img/lang_graph.svg" alt="LangGraph" data-project="Multi-Agent Workflow" data-impact="Automated 60% of manual document processing tasks">
-                                <img src="img/n8n.png" alt="n8n" data-project="Workflow Automation" data-impact="Automated 15+ manual processes saving 20 hours/week">
-                                <img src="img/rest_api.png" alt="REST API" data-project="API Development" data-impact="Built 12+ endpoints serving 1M+ requests/day">
-                                <img src="img/postman.png" alt="Postman" data-project="API Testing" data-impact="Reduced API bug rate by 30% with automated tests">
-                                <img src="img/aws%20ec2.png" alt="AWS EC2" data-project="Cloud Infrastructure" data-impact="Reduced infrastructure costs by 28% with auto-scaling">
-                                <img src="img/aws%20lambda.png" alt="AWS Lambda" data-project="Serverless Functions" data-impact="Cut API response time by 50% with event-driven architecture">
-                                <img src="img/aws%20s3.png" alt="AWS S3" data-project="Data Lake Storage" data-impact="Stored 2TB+ of training data with 99.9% availability">
-                                <img src="img/aws%20bedrock.png" alt="AWS Bedrock" data-project="GenAI Integration" data-impact="Deployed LLM features 3x faster with managed APIs">
-                                <img src="img/Docker-Logo.png" alt="Docker" data-project="Containerization" data-impact="Standardized deployments across 5+ environments">
-                                <img src="img/kube.png" alt="Kubernetes" data-project="Container Orchestration" data-impact="Achieved 99.95% uptime with automated failover">
-                                <img src="img/Git.png" alt="Git" data-project="Version Control" data-impact="Managed 200+ commits across 10+ repositories">
-                                <img src="img/GitHub_Copilot.png" alt="GitHub Copilot" data-project="AI Pair Programming" data-impact="Increased coding velocity by 25%">
-                                <img src="img/python.png" alt="Python" data-project="ML Model Pipeline" data-impact="Reduced model training time by 35% with optimized data preprocessing">
-                                <img src="img/pytorch.jpg" alt="PyTorch" data-project="Deep Learning Framework" data-impact="Improved model accuracy by 12% using custom loss functions">
-                                <img src="img/selenium.png" alt="Selenium" data-project="Web Automation" data-impact="Automated 30+ test scenarios reducing QA time">
-                                <img src="img/mcp.jpg" alt="MCP" data-project="Model Context Protocol" data-impact="Enhanced AI agent capabilities with structured data">
-                                <img src="img/ollama.png" alt="Ollama" data-project="Local LLM Deployment" data-impact="Deployed private LLMs with 40% cost reduction">
-                                <img src="img/aplaca.webp" alt="Alpaca" data-project="Fine-Tuned Models" data-impact="Customized models for domain-specific tasks">
+                                <img src="img/airflow.png" alt="Airflow" data-project="Workflow Automation"
+                                    data-impact="Automated 20+ daily ETL jobs with 95% success rate">
+                                <img src="img/kafka.png" alt="Kafka" data-project="Streaming Pipeline"
+                                    data-impact="Reduced lag in Kafka pipeline by 40% with optimized consumers">
+                                <img src="img/Grafana_loki_logo.png" alt="Loki" data-project="Log Aggregation"
+                                    data-impact="Centralized 100GB+ logs with fast search">
+                                <img src="img/Prometheus.webp" alt="Prometheus" data-project="Metrics Monitoring"
+                                    data-impact="Reduced MTTR by 50% with real-time alerts">
+                                <img src="img/sql.png" alt="SQL" data-project="Database Queries"
+                                    data-impact="Optimized queries reducing execution time by 65%">
+                                <img src="img/no_sql.webp" alt="NoSQL" data-project="Document Store"
+                                    data-impact="Handled 10M+ transactions with sub-10ms latency">
+                                <img src="img/chromadb.png" alt="ChromaDB" data-project="Vector Database"
+                                    data-impact="Enabled semantic search with 0.2s average query time">
+                                <img src="img/pinecone.jpg" alt="Pinecone" data-project="Vector Search"
+                                    data-impact="Scaled to 1M+ embeddings with 99.9% recall">
+                                <img src="img/pgvector.svg" alt="pgvector" data-project="PostgreSQL Vectors"
+                                    data-impact="Integrated vector search into existing SQL workflows">
+                                <img src="img/yahoo_finance.webp" alt="Yahoo Finance"
+                                    data-project="Financial Data Pipeline"
+                                    data-impact="Ingested 50K+ daily market data points">
+                                <img src="img/LangChain_Logo.png" alt="LangChain" data-project="RAG Copilot System"
+                                    data-impact="Increased support ticket resolution rate by 45% with AI assistance">
+                                <img src="img/llama_index.png" alt="LlamaIndex" data-project="Knowledge Base Indexing"
+                                    data-impact="Reduced search latency from 2.5s to 0.3s with vector embeddings">
+                                <img src="img/lang_graph.svg" alt="LangGraph" data-project="Multi-Agent Workflow"
+                                    data-impact="Automated 60% of manual document processing tasks">
+                                <img src="img/n8n.png" alt="n8n" data-project="Workflow Automation"
+                                    data-impact="Automated 15+ manual processes saving 20 hours/week">
+                                <img src="img/rest_api.png" alt="REST API" data-project="API Development"
+                                    data-impact="Built 12+ endpoints serving 1M+ requests/day">
+                                <img src="img/postman.png" alt="Postman" data-project="API Testing"
+                                    data-impact="Reduced API bug rate by 30% with automated tests">
+                                <img src="img/aws%20ec2.png" alt="AWS EC2" data-project="Cloud Infrastructure"
+                                    data-impact="Reduced infrastructure costs by 28% with auto-scaling">
+                                <img src="img/aws%20lambda.png" alt="AWS Lambda" data-project="Serverless Functions"
+                                    data-impact="Cut API response time by 50% with event-driven architecture">
+                                <img src="img/aws%20s3.png" alt="AWS S3" data-project="Data Lake Storage"
+                                    data-impact="Stored 2TB+ of training data with 99.9% availability">
+                                <img src="img/aws%20bedrock.png" alt="AWS Bedrock" data-project="GenAI Integration"
+                                    data-impact="Deployed LLM features 3x faster with managed APIs">
+                                <img src="img/Docker-Logo.png" alt="Docker" data-project="Containerization"
+                                    data-impact="Standardized deployments across 5+ environments">
+                                <img src="img/kube.png" alt="Kubernetes" data-project="Container Orchestration"
+                                    data-impact="Achieved 99.95% uptime with automated failover">
+                                <img src="img/Git.png" alt="Git" data-project="Version Control"
+                                    data-impact="Managed 200+ commits across 10+ repositories">
+                                <img src="img/GitHub_Copilot.png" alt="GitHub Copilot"
+                                    data-project="AI Pair Programming" data-impact="Increased coding velocity by 25%">
+                                <img src="img/python.png" alt="Python" data-project="ML Model Pipeline"
+                                    data-impact="Reduced model training time by 35% with optimized data preprocessing">
+                                <img src="img/pytorch.jpg" alt="PyTorch" data-project="Deep Learning Framework"
+                                    data-impact="Improved model accuracy by 12% using custom loss functions">
+                                <img src="img/selenium.png" alt="Selenium" data-project="Web Automation"
+                                    data-impact="Automated 30+ test scenarios reducing QA time">
+                                <img src="img/mcp.jpg" alt="MCP" data-project="Model Context Protocol"
+                                    data-impact="Enhanced AI agent capabilities with structured data">
+                                <img src="img/ollama.png" alt="Ollama" data-project="Local LLM Deployment"
+                                    data-impact="Deployed private LLMs with 40% cost reduction">
+                                <img src="img/aplaca.webp" alt="Alpaca" data-project="Fine-Tuned Models"
+                                    data-impact="Customized models for domain-specific tasks">
                             </div>
                         </div>
                     </div>
@@ -575,7 +733,9 @@
                 <div class="buy-book">
                     <h2>Let's Connect!</h2>
                     <p>
-                        I love jamming on hard fintech problems, purposeful side projects, or wellness collabs. Share a brief about your team and I’ll reply with ideas, a plan, or a loom. Want the resume? Grab a fresh copy below.
+                        I love jamming on hard fintech problems, purposeful side projects, or wellness collabs. Share a
+                        brief about your team and I’ll reply with ideas, a plan, or a loom. Want the resume? Grab a
+                        fresh copy below.
                     </p>
 
                     <div class="book">
@@ -588,24 +748,28 @@
 
                 <div id="social">
 
-                        <ul>
-                            <li>
-                                <a href="#" id="openEmailModalConnect" class="btn-social btn-outline envelope"><i class="fa fa-fw fa-envelope"></i></a>
-                                <h6>Email</h6>
-                            </li>
-                            <li>
-                                <a href="https://www.linkedin.com/in/sabari-g-24072002ya/" target="_blank" class="btn-social btn-outline twitter"><i class="fa fa-fw fa-linkedin"></i></a>
-                                <h6>LinkedIn</h6>
-                            </li>
-                            <li>
-                                <a href="https://github.com/sabari-ui" target="_blank" class="btn-social btn-outline github"><i class="fa fa-fw fa-github"></i></a>
-                                <h6>Github</h6>
-                            </li>
-                         
-                        </ul>
-                        <h2 style="margin-top: 2rem; font-size: 1rem; font-weight: 500;text-align: center;">&copy; 2026 Sabari G. All rights reserved.</h2>
+                    <ul>
+                        <li>
+                            <a href="#" id="openEmailModalConnect" class="btn-social btn-outline envelope"><i
+                                    class="fa fa-fw fa-envelope"></i></a>
+                            <h6>Email</h6>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/sabari-g-24072002ya/" target="_blank"
+                                class="btn-social btn-outline twitter"><i class="fa fa-fw fa-linkedin"></i></a>
+                            <h6>LinkedIn</h6>
+                        </li>
+                        <li>
+                            <a href="https://github.com/sabari-ui" target="_blank"
+                                class="btn-social btn-outline github"><i class="fa fa-fw fa-github"></i></a>
+                            <h6>Github</h6>
+                        </li>
 
-                    </div>
+                    </ul>
+                    <h2 style="margin-top: 2rem; font-size: 1rem; font-weight: 500;text-align: center;">&copy; 2026
+                        Sabari G. All rights reserved.</h2>
+
+                </div>
             </div>
         </div>
     </div>
@@ -617,244 +781,230 @@
 
     <!-- Quote Carousel Script -->
     <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const quotes = [
-            {
-                text: "Humility is not thinking less of yourself, but thinking of yourself less.",
-                author: "C.S. Lewis"
-            },
-            {
-                text: "The only way to do great work is to love what you do.",
-                author: "Steve Jobs"
-            },
-            {
-                text: "The future belongs to those who believe in the beauty of their dreams.",
-                author: "Eleanor Roosevelt"
-            },
-            {
-                text: "Strive not to be a success, but rather to be of value.",
-                author: "Albert Einstein"
-            }
-        ];
-
-        let currentQuoteIndex = 0;
-
-        const quoteTextElement = document.getElementById('quote-text');
-        const quoteAuthorElement = document.getElementById('quote-author');
-        const prevQuoteBtn = document.getElementById('prev-quote');
-        const nextQuoteBtn = document.getElementById('next-quote');
-
-        function updateQuote() {
-            if (quoteTextElement && quoteAuthorElement) {
-                quoteTextElement.textContent = `"${quotes[currentQuoteIndex].text}"`;
-                quoteAuthorElement.textContent = quotes[currentQuoteIndex].author;
-
-                quoteTextElement.classList.add('quote-fade');
-                quoteAuthorElement.classList.add('quote-fade');
-
-                quoteTextElement.addEventListener('animationend', () => {
-                    quoteTextElement.classList.remove('quote-fade');
-                    quoteAuthorElement.classList.remove('quote-fade');
-                }, { once: true });
-            }
-        }
-
-        nextQuoteBtn?.addEventListener('click', () => {
-            currentQuoteIndex = (currentQuoteIndex + 1) % quotes.length;
-            updateQuote();
-        });
-
-        prevQuoteBtn?.addEventListener('click', () => {
-            currentQuoteIndex = (currentQuoteIndex - 1 + quotes.length) % quotes.length;
-            updateQuote();
-        });
-
-        const emailModal = document.getElementById('emailModal');
-        const openEmailButtons = document.querySelectorAll('#openEmailModalTop, #openEmailModalConnect');
-        const closeEmailButton = document.getElementById('closeEmailModalBtn');
-        const resumeModal = document.getElementById('resumeModal');
-        const openResumeBtn = document.getElementById('openResumeModalBtn');
-        const closeResumeBtn = document.getElementById('closeResumeModalBtn');
-        const resumeForm = document.getElementById('resumeForm');
-        const resumeDownloadLink = document.getElementById('resumeDownloadLink');
-        const projectModal = document.getElementById('projectModal');
-        const openProjectBtn = document.getElementById('openProjectModal');
-        const closeProjectModalBtn = document.getElementById('closeProjectModalBtn');
-        const openChatBtn = document.getElementById('openChatBtn');
-        let lastScrollY = window.scrollY;
-
-        function openEmailModal() {
-            emailModal.classList.add('visible');
-            document.body.classList.add('no-scroll');
-        }
-
-        function closeEmailModal() {
-            emailModal.classList.remove('visible');
-            document.body.classList.remove('no-scroll');
-        }
-
-        function openResumeModal() {
-            resumeModal.classList.add('visible');
-            document.body.classList.add('no-scroll');
-        }
-
-        function closeResumeModal() {
-            resumeModal.classList.remove('visible');
-            document.body.classList.remove('no-scroll');
-        }
-
-        openEmailButtons.forEach(btn => {
-            btn?.addEventListener('click', (e) => {
-                e.preventDefault();
-                openEmailModal();
-            });
-        });
-
-        closeEmailButton?.addEventListener('click', closeEmailModal);
-        emailModal?.addEventListener('click', (e) => {
-            if (e.target === emailModal) {
-                closeEmailModal();
-            }
-        });
-
-        openResumeBtn?.addEventListener('click', (e) => {
-            e.preventDefault();
-            openResumeModal();
-        });
-
-        closeResumeBtn?.addEventListener('click', closeResumeModal);
-        resumeModal?.addEventListener('click', (e) => {
-            if (e.target === resumeModal) {
-                closeResumeModal();
-            }
-        });
-
-        function openProjectModal() {
-            projectModal.classList.add('visible');
-            document.body.classList.add('no-scroll');
-        }
-
-        function closeProjectModal() {
-            projectModal.classList.remove('visible');
-            document.body.classList.remove('no-scroll');
-        }
-
-        openProjectBtn?.addEventListener('click', (e) => {
-            e.preventDefault();
-            openProjectModal();
-        });
-
-        closeProjectModalBtn?.addEventListener('click', closeProjectModal);
-        projectModal?.addEventListener('click', (e) => {
-            if (e.target === projectModal) {
-                closeProjectModal();
-            }
-        });
-
-        // Open chat page in same tab
-        openChatBtn?.addEventListener('click', () => {
-            window.location.href = 'chat.html';
-        });
-
-        resumeForm?.addEventListener('submit', (e) => {
-            e.preventDefault();
-            const emailInput = document.getElementById('resumeEmail');
-            const userEmail = emailInput.value;
-            if (userEmail) {
-                resumeDownloadLink?.click();
-                resumeForm.reset();
-                closeResumeModal();
-            }
-        });
-
-        function adjustMenu() {
-            const padding = Math.max(0.28, 0.56 - window.scrollY / 550);
-            const opacity = Math.min(0.96, 0.94 + window.scrollY / 2000);
-            const submenuOffset = Math.max(8, 18 - (window.scrollY / 25));
-            document.documentElement.style.setProperty('--menu-padding', `${padding}% 5.5%`);
-            document.documentElement.style.setProperty('--menu-bg', `rgba(95,95,95,${opacity})`);
-            document.documentElement.style.setProperty('--menu-padding-top', `${submenuOffset}vh`);
-        }
-
-        adjustMenu();
-
-        window.addEventListener('scroll', () => {
-            adjustMenu();
-        });
-
-        // Logo Tooltip Functionality
-        const logoImages = document.querySelectorAll('.stack-row img[data-project]');
-        let currentTooltip = null;
-
-        logoImages.forEach(img => {
-            const projectName = img.dataset.project;
-            const impact = img.dataset.impact;
-
-            if (!projectName || !impact) return;
-
-            img.addEventListener('mouseenter', function(e) {
-                // Remove any existing tooltip
-                if (currentTooltip) {
-                    currentTooltip.remove();
+        document.addEventListener('DOMContentLoaded', function () {
+            const quotes = [
+                {
+                    text: "Humility is not thinking less of yourself, but thinking of yourself less.",
+                    author: "C.S. Lewis"
+                },
+                {
+                    text: "The only way to do great work is to love what you do.",
+                    author: "Steve Jobs"
+                },
+                {
+                    text: "The future belongs to those who believe in the beauty of their dreams.",
+                    author: "Eleanor Roosevelt"
+                },
+                {
+                    text: "Strive not to be a success, but rather to be of value.",
+                    author: "Albert Einstein"
                 }
+            ];
 
-                // Create tooltip element
-                const tooltip = document.createElement('div');
-                tooltip.className = 'logo-tooltip';
-                tooltip.innerHTML = `
+            let currentQuoteIndex = 0;
+
+            const quoteTextElement = document.getElementById('quote-text');
+            const quoteAuthorElement = document.getElementById('quote-author');
+            const prevQuoteBtn = document.getElementById('prev-quote');
+            const nextQuoteBtn = document.getElementById('next-quote');
+
+            function updateQuote() {
+                if (quoteTextElement && quoteAuthorElement) {
+                    quoteTextElement.textContent = `"${quotes[currentQuoteIndex].text}"`;
+                    quoteAuthorElement.textContent = quotes[currentQuoteIndex].author;
+
+                    quoteTextElement.classList.add('quote-fade');
+                    quoteAuthorElement.classList.add('quote-fade');
+
+                    quoteTextElement.addEventListener('animationend', () => {
+                        quoteTextElement.classList.remove('quote-fade');
+                        quoteAuthorElement.classList.remove('quote-fade');
+                    }, { once: true });
+                }
+            }
+
+            nextQuoteBtn?.addEventListener('click', () => {
+                currentQuoteIndex = (currentQuoteIndex + 1) % quotes.length;
+                updateQuote();
+            });
+
+            prevQuoteBtn?.addEventListener('click', () => {
+                currentQuoteIndex = (currentQuoteIndex - 1 + quotes.length) % quotes.length;
+                updateQuote();
+            });
+
+            const emailModal = document.getElementById('emailModal');
+            const openEmailButtons = document.querySelectorAll('#openEmailModalTop, #openEmailModalConnect');
+            const closeEmailButton = document.getElementById('closeEmailModalBtn');
+            const resumeModal = document.getElementById('resumeModal');
+            const openResumeBtn = document.getElementById('openResumeModalBtn');
+            const closeResumeBtn = document.getElementById('closeResumeModalBtn');
+            const resumeForm = document.getElementById('resumeForm');
+            const resumeDownloadLink = document.getElementById('resumeDownloadLink');
+            const projectModal = document.getElementById('projectModal');
+            const openProjectBtn = document.getElementById('openProjectModal');
+            const closeProjectModalBtn = document.getElementById('closeProjectModalBtn');
+            const openChatBtn = document.getElementById('openChatBtn');
+            let lastScrollY = window.scrollY;
+
+            function openEmailModal() {
+                emailModal.classList.add('visible');
+                document.body.classList.add('no-scroll');
+            }
+
+            function closeEmailModal() {
+                emailModal.classList.remove('visible');
+                document.body.classList.remove('no-scroll');
+            }
+
+            function openResumeModal() {
+                resumeModal.classList.add('visible');
+                document.body.classList.add('no-scroll');
+            }
+
+            function closeResumeModal() {
+                resumeModal.classList.remove('visible');
+                document.body.classList.remove('no-scroll');
+            }
+
+            openEmailButtons.forEach(btn => {
+                btn?.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    openEmailModal();
+                });
+            });
+
+            closeEmailButton?.addEventListener('click', closeEmailModal);
+            emailModal?.addEventListener('click', (e) => {
+                if (e.target === emailModal) {
+                    closeEmailModal();
+                }
+            });
+
+            openResumeBtn?.addEventListener('click', (e) => {
+                e.preventDefault();
+                openResumeModal();
+            });
+
+            closeResumeBtn?.addEventListener('click', closeResumeModal);
+            resumeModal?.addEventListener('click', (e) => {
+                if (e.target === resumeModal) {
+                    closeResumeModal();
+                }
+            });
+
+            function openProjectModal() {
+                projectModal.classList.add('visible');
+                document.body.classList.add('no-scroll');
+            }
+
+            function closeProjectModal() {
+                projectModal.classList.remove('visible');
+                document.body.classList.remove('no-scroll');
+            }
+
+            openProjectBtn?.addEventListener('click', (e) => {
+                e.preventDefault();
+                openProjectModal();
+            });
+
+            closeProjectModalBtn?.addEventListener('click', closeProjectModal);
+            projectModal?.addEventListener('click', (e) => {
+                if (e.target === projectModal) {
+                    closeProjectModal();
+                }
+            });
+
+            // Open chat page in same tab
+            openChatBtn?.addEventListener('click', () => {
+                window.location.href = 'chat.html';
+            });
+
+            resumeForm?.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const emailInput = document.getElementById('resumeEmail');
+                const userEmail = emailInput.value;
+                if (userEmail) {
+                    resumeDownloadLink?.click();
+                    resumeForm.reset();
+                    closeResumeModal();
+                }
+            });
+
+            function adjustMenu() {
+                const padding = Math.max(0.28, 0.56 - window.scrollY / 550);
+                const opacity = Math.min(0.96, 0.94 + window.scrollY / 2000);
+                const submenuOffset = Math.max(8, 18 - (window.scrollY / 25));
+                document.documentElement.style.setProperty('--menu-padding', `${padding}% 5.5%`);
+                document.documentElement.style.setProperty('--menu-bg', `rgba(95,95,95,${opacity})`);
+                document.documentElement.style.setProperty('--menu-padding-top', `${submenuOffset}vh`);
+            }
+
+            adjustMenu();
+
+            window.addEventListener('scroll', () => {
+                adjustMenu();
+            });
+
+            // Logo Tooltip Functionality
+            const logoImages = document.querySelectorAll('.stack-row img[data-project]');
+            let currentTooltip = null;
+
+            logoImages.forEach(img => {
+                const projectName = img.dataset.project;
+                const impact = img.dataset.impact;
+
+                if (!projectName || !impact) return;
+
+                img.addEventListener('mouseenter', function (e) {
+                    // Remove any existing tooltip
+                    if (currentTooltip) {
+                        currentTooltip.remove();
+                    }
+
+                    // Create tooltip element
+                    const tooltip = document.createElement('div');
+                    tooltip.className = 'logo-tooltip';
+                    tooltip.innerHTML = `
                     <div class="logo-tooltip-title">${projectName}</div>
                     <div class="logo-tooltip-impact">${impact}</div>
                 `;
-                // Reset arrow position class
-                tooltip.classList.remove('arrow-bottom');
+                    // Reset arrow position class
+                    tooltip.classList.remove('arrow-bottom');
 
-                // Add to body
-                document.body.appendChild(tooltip);
-                currentTooltip = tooltip;
+                    // Add to body
+                    document.body.appendChild(tooltip);
+                    currentTooltip = tooltip;
 
-                // Position tooltip
-                const imgRect = img.getBoundingClientRect();
-                const tooltipRect = tooltip.getBoundingClientRect();
-                
-                // Position above the logo
-                let left = imgRect.left + (imgRect.width / 2) - (tooltipRect.width / 2);
-                let top = imgRect.top - tooltipRect.height - 12;
+                    // Position tooltip
+                    const imgRect = img.getBoundingClientRect();
+                    const tooltipRect = tooltip.getBoundingClientRect();
 
-                // Adjust if tooltip goes off screen
-                if (left < 10) left = 10;
-                if (left + tooltipRect.width > window.innerWidth - 10) {
-                    left = window.innerWidth - tooltipRect.width - 10;
-                }
-                if (top < 10) {
-                    // Position below if not enough space above
-                    top = imgRect.bottom + 12;
-                    tooltip.classList.add('arrow-bottom');
-                }
+                    // Position above the logo
+                    let left = imgRect.left + (imgRect.width / 2) - (tooltipRect.width / 2);
+                    let top = imgRect.top - tooltipRect.height - 12;
 
-                tooltip.style.left = left + 'px';
-                tooltip.style.top = top + 'px';
+                    // Adjust if tooltip goes off screen
+                    if (left < 10) left = 10;
+                    if (left + tooltipRect.width > window.innerWidth - 10) {
+                        left = window.innerWidth - tooltipRect.width - 10;
+                    }
+                    if (top < 10) {
+                        // Position below if not enough space above
+                        top = imgRect.bottom + 12;
+                        tooltip.classList.add('arrow-bottom');
+                    }
 
-                // Show tooltip with animation
-                setTimeout(() => {
-                    tooltip.classList.add('visible');
-                }, 10);
-            });
+                    tooltip.style.left = left + 'px';
+                    tooltip.style.top = top + 'px';
 
-            img.addEventListener('mouseleave', function() {
-                if (currentTooltip) {
-                    currentTooltip.classList.remove('visible');
+                    // Show tooltip with animation
                     setTimeout(() => {
-                        if (currentTooltip && currentTooltip.parentNode) {
-                            currentTooltip.remove();
-                        }
-                        currentTooltip = null;
-                    }, 300);
-                }
-            });
+                        tooltip.classList.add('visible');
+                    }, 10);
+                });
 
-            // Also handle mouseleave on tooltip itself
-            img.addEventListener('mouseout', function(e) {
-                if (currentTooltip && !currentTooltip.contains(e.relatedTarget) && e.relatedTarget !== img) {
+                img.addEventListener('mouseleave', function () {
                     if (currentTooltip) {
                         currentTooltip.classList.remove('visible');
                         setTimeout(() => {
@@ -864,100 +1014,117 @@
                             currentTooltip = null;
                         }, 300);
                     }
-                }
+                });
+
+                // Also handle mouseleave on tooltip itself
+                img.addEventListener('mouseout', function (e) {
+                    if (currentTooltip && !currentTooltip.contains(e.relatedTarget) && e.relatedTarget !== img) {
+                        if (currentTooltip) {
+                            currentTooltip.classList.remove('visible');
+                            setTimeout(() => {
+                                if (currentTooltip && currentTooltip.parentNode) {
+                                    currentTooltip.remove();
+                                }
+                                currentTooltip = null;
+                            }, 300);
+                        }
+                    }
+                });
             });
         });
-    });
     </script>
 
     <!-- Google Analytics -->
     <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-      ga('create', 'UA-85617614-1', 'auto');
-      ga('send', 'pageview');
+        ga('create', 'UA-85617614-1', 'auto');
+        ga('send', 'pageview');
 
     </script>
 
-<div id="emailModal" class="modal-overlay">
-  <div class="modal-content">
-    <span class="close-modal" id="closeEmailModalBtn">&times;</span>
-    <h2>Have any questions? Fill out the form and I’ll get back soon!</h2>
-    <form id="emailForm" action="https://formspree.io/f/mqaljwar" method="POST">
-      <div class="modal-row">
-        <div class="modal-field">
-          <label for="modalFirstName">First Name</label>
-          <input type="text" id="modalFirstName" name="modalFirstName" required>
+    <div id="emailModal" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-modal" id="closeEmailModalBtn">&times;</span>
+            <h2>Have any questions? Fill out the form and I’ll get back soon!</h2>
+            <form id="emailForm" action="https://formspree.io/f/mqaljwar" method="POST">
+                <div class="modal-row">
+                    <div class="modal-field">
+                        <label for="modalFirstName">First Name</label>
+                        <input type="text" id="modalFirstName" name="modalFirstName" required>
+                    </div>
+                    <div class="modal-field">
+                        <label for="modalLastName">Last Name</label>
+                        <input type="text" id="modalLastName" name="modalLastName" required>
+                    </div>
+                </div>
+                <br />
+                <label for="modalEmail">Email</label>
+                <input type="email" id="modalEmail" name="email" required>
+
+                <label class="modal-role-label">You are a? <span>(required)</span></label>
+                <div class="modal-checkbox-container">
+                    <label class="modal-checkbox-item">
+                        <input type="radio" id="modalStudent" name="modalRole" value="Student" required>
+                        Student
+                    </label>
+                    <label class="modal-checkbox-item">
+                        <input type="radio" id="modalRecruiter" name="modalRole" value="Recruiter">
+                        Recruiter
+                    </label>
+                    <label class="modal-checkbox-item">
+                        <input type="radio" id="modalCompany" name="modalRole" value="Company (NIL)">
+                        Company
+                    </label>
+                    <label class="modal-checkbox-item">
+                        <input type="radio" id="modalOther" name="modalRole" value="Other">
+                        Others
+                    </label>
+                </div>
+
+                <label for="modalMessage" class="modal-message-label">Message <span>(required)</span></label>
+                <textarea id="modalMessage" name="modalMessage" rows="4" required></textarea>
+                <button type="submit" class="rec_button modal-submit">Send</button>
+            </form>
         </div>
-        <div class="modal-field">
-          <label for="modalLastName">Last Name</label>
-          <input type="text" id="modalLastName" name="modalLastName" required>
+    </div>
+
+    <div id="resumeModal" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-modal" id="closeResumeModalBtn">&times;</span>
+            <h2>Enter your email to download the latest resume.</h2>
+            <form id="resumeForm">
+                <div class="modal-field">
+                    <label for="resumeEmail">Email</label>
+                    <input type="email" id="resumeEmail" name="resumeEmail" required>
+                </div>
+                <button type="submit" class="rec_button modal-submit">Download</button>
+            </form>
         </div>
-      </div>
-      <br/>
-      <label for="modalEmail">Email</label>
-      <input type="email" id="modalEmail" name="email" required>
 
-      <label class="modal-role-label">You are a? <span>(required)</span></label>
-      <div class="modal-checkbox-container">
-        <label class="modal-checkbox-item">
-          <input type="radio" id="modalStudent" name="modalRole" value="Student" required>
-          Student
-        </label>
-        <label class="modal-checkbox-item">
-          <input type="radio" id="modalRecruiter" name="modalRole" value="Recruiter">
-          Recruiter
-        </label>
-        <label class="modal-checkbox-item">
-          <input type="radio" id="modalCompany" name="modalRole" value="Company (NIL)">
-          Company
-        </label>
-        <label class="modal-checkbox-item">
-          <input type="radio" id="modalOther" name="modalRole" value="Other">
-          Others
-        </label>
-      </div>
 
-      <label for="modalMessage" class="modal-message-label">Message <span>(required)</span></label>
-      <textarea id="modalMessage" name="modalMessage" rows="4" required></textarea>
-      <button type="submit" class="rec_button modal-submit">Send</button>
-    </form>
-  </div>
-</div>
+    </div>
 
-<div id="resumeModal" class="modal-overlay">
-  <div class="modal-content">
-    <span class="close-modal" id="closeResumeModalBtn">&times;</span>
-    <h2>Enter your email to download the latest resume.</h2>
-    <form id="resumeForm">
-      <div class="modal-field">
-        <label for="resumeEmail">Email</label>
-        <input type="email" id="resumeEmail" name="resumeEmail" required>
-      </div>
-      <button type="submit" class="rec_button modal-submit">Download</button>
-    </form>
-  </div>
+    <a id="resumeDownloadLink" href="docs/SABARI.pdf" download="SABARI.pdf" hidden></a>
 
-  
-</div>
-
-<a id="resumeDownloadLink" href="docs/SABARI.pdf" download="SABARI.pdf" hidden></a>
-
-<div id="projectModal" class="modal-overlay">
-  <div class="modal-content project-modal">
-    <span class="close-modal" id="closeProjectModalBtn">&times;</span>
-    <h2>Fraud Signal Stores</h2>
-    <p>A sample overview describing how the project ingests merchant telemetry, enriches it with risk signals, and surfaces the insights through near real-time dashboards.</p>
-    <ul>
-      <li>Event-driven ingestion (Kafka + AWS Lambda)</li>
-      <li>Signal computation with PySpark + MLflow tracking</li>
-      <li>Interactive dashboards monitoring precision/recall</li>
-    </ul>
-  </div>
-</div>
+    <div id="projectModal" class="modal-overlay">
+        <div class="modal-content project-modal">
+            <span class="close-modal" id="closeProjectModalBtn">&times;</span>
+            <h2>Fraud Signal Stores</h2>
+            <p>A sample overview describing how the project ingests merchant telemetry, enriches it with risk signals,
+                and surfaces the insights through near real-time dashboards.</p>
+            <ul>
+                <li>Event-driven ingestion (Kafka + AWS Lambda)</li>
+                <li>Signal computation with PySpark + MLflow tracking</li>
+                <li>Interactive dashboards monitoring precision/recall</li>
+            </ul>
+        </div>
+    </div>
 
 </body>
 
