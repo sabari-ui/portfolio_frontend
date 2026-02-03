@@ -21,8 +21,12 @@
     <title>Sabari G · Portfolio</title>
 
     <!-- Fonts -->
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </noscript>
     <link href="https://fonts.googleapis.com/css?family=Assistant:300,400,600,700" rel="stylesheet">
 
 
@@ -37,14 +41,11 @@
     <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
 
     <!--Jquery-->
-    <script type="text/javascript"
-        src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=tFjZCIqx11zqAQHUAbMfFBpyT4BmKITuQ0gkNOJofg_Onxl-XXLN_D77rBevPgHe1KXFIH9D60YGhBjnpCFCeg"
-        charset="UTF-8"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script defer src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
     <!-- Full Page -->
-    <script src="js/jquery.fullpage.js"></script>
+    <script defer src="js/jquery.fullpage.js"></script>
 
 
     <!-- Full Page Setup -->
@@ -146,7 +147,8 @@
                     <div class="year-showcase-content">
                         <div class="year-number year-left">20</div>
                         <div class="year-image-container">
-                            <img src="img/chat_fin.jpeg" alt="2025 Project Showcase" class="year-showcase-img" />
+                            <img src="img/chat_fin.jpeg" alt="2025 Project Showcase" class="year-showcase-img"
+                                loading="lazy" />
                         </div>
                         <div class="year-number year-right">25</div>
                     </div>
@@ -182,19 +184,19 @@
                             <div>
                                 <a href="#" id="openProjectModal">
                                     <div class="nav-unit-wrapper-s tile1">
-                                        <img src="img/tiles/1-1.png" class="nav-unit-tile-s" alt="Fraud">
+                                        <img src="img/tiles/1-1.png" class="nav-unit-tile-s" alt="Fraud" loading="lazy">
                                         <span class="nav-unit-title-s"> Fraud signal stores </span>
                                     </div>
                                 </a>
                                 <a href="#3rdPage">
                                     <div class="nav-unit-wrapper-s tile2">
-                                        <img src="img/tiles/1-2.png" class="nav-unit-tile-s" alt="Risk">
+                                        <img src="img/tiles/1-2.png" class="nav-unit-tile-s" alt="Risk" loading="lazy">
                                         <span class="nav-unit-title-s"> Credit risk models </span>
                                     </div>
                                 </a>
                                 <a href="#3rdPage">
                                     <div class="nav-unit-wrapper-s tile3">
-                                        <img src="img/tiles/1-3.png" class="nav-unit-tile-s" alt="Ops">
+                                        <img src="img/tiles/1-3.png" class="nav-unit-tile-s" alt="Ops" loading="lazy">
                                         <span class="nav-unit-title-s"> Realtime health boards </span>
                                     </div>
                                 </a>
@@ -219,19 +221,21 @@
                             <div>
                                 <a href="#3rdPage">
                                     <div class="nav-unit-wrapper-s tile1">
-                                        <img src="img/tiles/2-1.png" class="nav-unit-tile-s" alt="Payments">
+                                        <img src="img/tiles/2-1.png" class="nav-unit-tile-s" alt="Payments"
+                                            loading="lazy">
                                         <span class="nav-unit-title-s"> Payment rails tooling </span>
                                     </div>
                                 </a>
                                 <a href="#3rdPage">
                                     <div class="nav-unit-wrapper-s tile2">
-                                        <img src="img/tiles/2-2.png" class="nav-unit-tile-s" alt="Compliance">
+                                        <img src="img/tiles/2-2.png" class="nav-unit-tile-s" alt="Compliance"
+                                            loading="lazy">
                                         <span class="nav-unit-title-s"> Compliance-ready alerts </span>
                                     </div>
                                 </a>
                                 <a href="#3rdPage">
                                     <div class="nav-unit-wrapper-s tile3">
-                                        <img src="img/tiles/2-3.png" class="nav-unit-tile-s" alt="Ops">
+                                        <img src="img/tiles/2-3.png" class="nav-unit-tile-s" alt="Ops" loading="lazy">
                                         <span class="nav-unit-title-s"> Operator handoffs </span>
                                     </div>
                                 </a>
@@ -256,19 +260,20 @@
                             <div>
                                 <a href="#3rdPage">
                                     <div class="nav-unit-wrapper-s tile1">
-                                        <img src="img/tiles/3-1.png" class="nav-unit-tile-s" alt="RAG">
+                                        <img src="img/tiles/3-1.png" class="nav-unit-tile-s" alt="RAG" loading="lazy">
                                         <span class="nav-unit-title-s"> Retrieval copilots </span>
                                     </div>
                                 </a>
                                 <a href="#3rdPage">
                                     <div class="nav-unit-wrapper-s tile2">
-                                        <img src="img/tiles/3-2.png" class="nav-unit-tile-s" alt="Pipelines">
+                                        <img src="img/tiles/3-2.png" class="nav-unit-tile-s" alt="Pipelines"
+                                            loading="lazy">
                                         <span class="nav-unit-title-s"> Knowledge curation </span>
                                     </div>
                                 </a>
                                 <a href="#3rdPage">
                                     <div class="nav-unit-wrapper-s tile3">
-                                        <img src="img/tiles/3-3.png" class="nav-unit-tile-s" alt="Eval">
+                                        <img src="img/tiles/3-3.png" class="nav-unit-tile-s" alt="Eval" loading="lazy">
                                         <span class="nav-unit-title-s"> Eval + guardrails </span>
                                     </div>
                                 </a>
@@ -293,19 +298,19 @@
                             <div>
                                 <a href="#3rdPage">
                                     <div class="nav-unit-wrapper-s tile1">
-                                        <img src="img/tiles/4-1.png" class="nav-unit-tile-s" alt="Cloud">
+                                        <img src="img/tiles/4-1.png" class="nav-unit-tile-s" alt="Cloud" loading="lazy">
                                         <span class="nav-unit-title-s"> AWS + Kubernetes </span>
                                     </div>
                                 </a>
                                 <a href="#3rdPage">
                                     <div class="nav-unit-wrapper-s tile2">
-                                        <img src="img/tiles/4-2.png" class="nav-unit-tile-s" alt="Data">
+                                        <img src="img/tiles/4-2.png" class="nav-unit-tile-s" alt="Data" loading="lazy">
                                         <span class="nav-unit-title-s"> Streaming pipelines </span>
                                     </div>
                                 </a>
                                 <a href="#3rdPage">
                                     <div class="nav-unit-wrapper-s tile3">
-                                        <img src="img/tiles/4-3.png" class="nav-unit-tile-s" alt="APIs">
+                                        <img src="img/tiles/4-3.png" class="nav-unit-tile-s" alt="APIs" loading="lazy">
                                         <span class="nav-unit-title-s"> Secure APIs </span>
                                     </div>
                                 </a>
@@ -774,10 +779,10 @@
         </div>
     </div>
     <!-- D3 -->
-    <script src="./js/d3.min.js"></script>
+    <script defer src="./js/d3.min.js"></script>
 
     <!-- Home JavaScript -->
-    <script src="./js/home.js"></script>
+    <script defer src="./js/home.js"></script>
 
     <!-- Quote Carousel Script -->
     <script>
