@@ -800,69 +800,78 @@ ul.menu-sub {
 		font-size: 20px;
 	}
 
-	.chapter-submenu {
-		padding-top: 5%;
-		padding-left: 8%;
+	/* Added for Focus Section Customization - Global */
+	#section1 .slide {
+		background-image: url('../img/network-bg.png');
+		background-repeat: no-repeat;
+		background-position: 100% center;
+		background-size: 55%;
 	}
+}
 
-	.menu-sub li {
-		font-size: 1em;
-	}
+.chapter-submenu {
+	padding-top: 5%;
+	padding-left: 8%;
+}
 
-	.section-wrapper {
-		width: 60%;
+.menu-sub li {
+	font-size: 1em;
+}
 
-	}
+.section-wrapper {
+	width: 60%;
 
-	/*Section2*/
-	.nav-unit-wrapper-s {
-		width: 20em;
-	}
+}
 
-	.nav-unit-wrapper-s img {
-		width: 6em;
-	}
+/*Section2*/
+.nav-unit-wrapper-s {
+	width: 20em;
+}
 
-	.nav-unit-title-s {
-		font-size: 1em;
-		padding-left: 10%;
+.nav-unit-wrapper-s img {
+	width: 6em;
+}
 
-	}
+.nav-unit-title-s {
+	font-size: 1em;
+	padding-left: 10%;
 
-	/*Font Size*/
-	h1 {
-		font-size: 40px;
-	}
+}
 
-	h4 {
-		font-size: 24px;
-	}
+/*Font Size*/
+h1 {
+	font-size: 40px;
+}
 
-	p {
-		font-size: 18px;
-		font-weight: 400;
-	}
+h4 {
+	font-size: 24px;
+}
+
+p {
+	font-size: 18px;
+	font-weight: 400;
+}
 
 
-	.rec_button {
-		font-size: 16px;
-		padding: 1% 8%;
-	}
+.rec_button {
+	font-size: 16px;
+	padding: 1% 8%;
+}
 
-	.book {
-		width: 30%;
-	}
+.book {
+	width: 30%;
+}
 
-	/*	.book img{
+/*	.book img{
 	
 	 max-width: 200px;
 	 margin: 0 auto;
 	 padding-bottom: 5%;
 	}*/
 
-	.right {
-		padding-top: 8em;
-	}
+.right {
+	padding-top: 8em;
+}
 
 
 }
