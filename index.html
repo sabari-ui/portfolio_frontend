@@ -21,17 +21,22 @@
     <title>Sabari G · Portfolio</title>
 
     <!-- Fonts -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Assistant:300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Assistant:300,400,600,700&display=swap" rel="stylesheet">
 
 
 
     <!-- Home Page CSS -->
-    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <link rel="preload" href="css/home.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" type="text/css" href="css/home.css"></noscript>
 
     <!-- Full Page CSS -->
-    <link rel="stylesheet" type="text/css" href="css/jquery.fullpage.css" />
+    <link rel="preload" href="css/jquery.fullpage.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" type="text/css" href="css/jquery.fullpage.css" /></noscript>
 
     <!--Favicon-->
     <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
@@ -146,7 +151,7 @@
                     <div class="year-showcase-content">
                         <div class="year-number year-left">20</div>
                         <div class="year-image-container">
-                            <img src="img/chat_fin.jpeg" alt="2025 Project Showcase" class="year-showcase-img" />
+                            <img loading="lazy" decoding="async" src="img/chat_fin.webp" alt="2025 Project Showcase" class="year-showcase-img" />
                         </div>
                         <div class="year-number year-right">25</div>
                     </div>
@@ -182,19 +187,19 @@
                             <div>
                                 <a href="#" id="openProjectModal">
                                     <div class="nav-unit-wrapper-s tile1">
-                                        <img src="img/tiles/1-1.png" class="nav-unit-tile-s" alt="Fraud">
+                                        <img loading="lazy" decoding="async" src="img/tiles/1-1.webp" class="nav-unit-tile-s" alt="Fraud">
                                         <span class="nav-unit-title-s"> Fraud signal stores </span>
                                     </div>
                                 </a>
                                 <a href="#3rdPage">
                                     <div class="nav-unit-wrapper-s tile2">
-                                        <img src="img/tiles/1-2.png" class="nav-unit-tile-s" alt="Risk">
+                                        <img loading="lazy" decoding="async" src="img/tiles/1-2.webp" class="nav-unit-tile-s" alt="Risk">
                                         <span class="nav-unit-title-s"> Credit risk models </span>
                                     </div>
                                 </a>
                                 <a href="#3rdPage">
                                     <div class="nav-unit-wrapper-s tile3">
-                                        <img src="img/tiles/1-3.png" class="nav-unit-tile-s" alt="Ops">
+                                        <img loading="lazy" decoding="async" src="img/tiles/1-3.webp" class="nav-unit-tile-s" alt="Ops">
                                         <span class="nav-unit-title-s"> Realtime health boards </span>
                                     </div>
                                 </a>
@@ -219,19 +224,19 @@
                             <div>
                                 <a href="#3rdPage">
                                     <div class="nav-unit-wrapper-s tile1">
-                                        <img src="img/tiles/2-1.png" class="nav-unit-tile-s" alt="Payments">
+                                        <img loading="lazy" decoding="async" src="img/tiles/2-1.webp" class="nav-unit-tile-s" alt="Payments">
                                         <span class="nav-unit-title-s"> Payment rails tooling </span>
                                     </div>
                                 </a>
                                 <a href="#3rdPage">
                                     <div class="nav-unit-wrapper-s tile2">
-                                        <img src="img/tiles/2-2.png" class="nav-unit-tile-s" alt="Compliance">
+                                        <img loading="lazy" decoding="async" src="img/tiles/2-2.webp" class="nav-unit-tile-s" alt="Compliance">
                                         <span class="nav-unit-title-s"> Compliance-ready alerts </span>
                                     </div>
                                 </a>
                                 <a href="#3rdPage">
                                     <div class="nav-unit-wrapper-s tile3">
-                                        <img src="img/tiles/2-3.png" class="nav-unit-tile-s" alt="Ops">
+                                        <img loading="lazy" decoding="async" src="img/tiles/2-3.webp" class="nav-unit-tile-s" alt="Ops">
                                         <span class="nav-unit-title-s"> Operator handoffs </span>
                                     </div>
                                 </a>
@@ -256,19 +261,19 @@
                             <div>
                                 <a href="#3rdPage">
                                     <div class="nav-unit-wrapper-s tile1">
-                                        <img src="img/tiles/3-1.png" class="nav-unit-tile-s" alt="RAG">
+                                        <img loading="lazy" decoding="async" src="img/tiles/3-1.webp" class="nav-unit-tile-s" alt="RAG">
                                         <span class="nav-unit-title-s"> Retrieval copilots </span>
                                     </div>
                                 </a>
                                 <a href="#3rdPage">
                                     <div class="nav-unit-wrapper-s tile2">
-                                        <img src="img/tiles/3-2.png" class="nav-unit-tile-s" alt="Pipelines">
+                                        <img loading="lazy" decoding="async" src="img/tiles/3-2.webp" class="nav-unit-tile-s" alt="Pipelines">
                                         <span class="nav-unit-title-s"> Knowledge curation </span>
                                     </div>
                                 </a>
                                 <a href="#3rdPage">
                                     <div class="nav-unit-wrapper-s tile3">
-                                        <img src="img/tiles/3-3.png" class="nav-unit-tile-s" alt="Eval">
+                                        <img loading="lazy" decoding="async" src="img/tiles/3-3.webp" class="nav-unit-tile-s" alt="Eval">
                                         <span class="nav-unit-title-s"> Eval + guardrails </span>
                                     </div>
                                 </a>
@@ -293,19 +298,19 @@
                             <div>
                                 <a href="#3rdPage">
                                     <div class="nav-unit-wrapper-s tile1">
-                                        <img src="img/tiles/4-1.png" class="nav-unit-tile-s" alt="Cloud">
+                                        <img loading="lazy" decoding="async" src="img/tiles/4-1.webp" class="nav-unit-tile-s" alt="Cloud">
                                         <span class="nav-unit-title-s"> AWS + Kubernetes </span>
                                     </div>
                                 </a>
                                 <a href="#3rdPage">
                                     <div class="nav-unit-wrapper-s tile2">
-                                        <img src="img/tiles/4-2.png" class="nav-unit-tile-s" alt="Data">
+                                        <img loading="lazy" decoding="async" src="img/tiles/4-2.webp" class="nav-unit-tile-s" alt="Data">
                                         <span class="nav-unit-title-s"> Streaming pipelines </span>
                                     </div>
                                 </a>
                                 <a href="#3rdPage">
                                     <div class="nav-unit-wrapper-s tile3">
-                                        <img src="img/tiles/4-3.png" class="nav-unit-tile-s" alt="APIs">
+                                        <img loading="lazy" decoding="async" src="img/tiles/4-3.webp" class="nav-unit-tile-s" alt="APIs">
                                         <span class="nav-unit-title-s"> Secure APIs </span>
                                     </div>
                                 </a>
@@ -330,19 +335,19 @@
                             <div>
                                 <a href="#3rdPage">
                                     <div class="nav-unit-wrapper-s tile1">
-                                        <img src="img/tiles/5-1.png" class="nav-unit-tile-s" alt="MBA">
+                                        <img loading="lazy" decoding="async" src="img/tiles/5-1.webp" class="nav-unit-tile-s" alt="MBA">
                                         <span class="nav-unit-title-s"> MBA finance lens </span>
                                     </div>
                                 </a>
                                 <a href="#3rdPage">
                                     <div class="nav-unit-wrapper-s tile2">
-                                        <img src="img/tiles/5-2.png" class="nav-unit-tile-s" alt="Story">
+                                        <img loading="lazy" decoding="async" src="img/tiles/5-2.webp" class="nav-unit-tile-s" alt="Story">
                                         <span class="nav-unit-title-s"> Product storytelling </span>
                                     </div>
                                 </a>
                                 <a href="#3rdPage">
                                     <div class="nav-unit-wrapper-s tile3">
-                                        <img src="img/tiles/5-3.png" class="nav-unit-tile-s" alt="Teams">
+                                        <img loading="lazy" decoding="async" src="img/tiles/5-3.webp" class="nav-unit-tile-s" alt="Teams">
                                         <span class="nav-unit-title-s"> Team rituals </span>
                                     </div>
                                 </a>
@@ -367,19 +372,19 @@
                             <div>
                                 <a href="#4thPage">
                                     <div class="nav-unit-wrapper-s tile1">
-                                        <img src="img/tiles/6-1.png" class="nav-unit-tile-s" alt="Fitness">
+                                        <img loading="lazy" decoding="async" src="img/tiles/6-1.webp" class="nav-unit-tile-s" alt="Fitness">
                                         <span class="nav-unit-title-s"> Fitness streaks </span>
                                     </div>
                                 </a>
                                 <a href="#4thPage">
                                     <div class="nav-unit-wrapper-s tile2">
-                                        <img src="img/tiles/6-2.png" class="nav-unit-tile-s" alt="Habits">
+                                        <img loading="lazy" decoding="async" src="img/tiles/6-2.webp" class="nav-unit-tile-s" alt="Habits">
                                         <span class="nav-unit-title-s"> Habit systems </span>
                                     </div>
                                 </a>
                                 <a href="#4thPage">
                                     <div class="nav-unit-wrapper-s tile3">
-                                        <img src="img/tiles/6-3.png" class="nav-unit-tile-s" alt="Community">
+                                        <img loading="lazy" decoding="async" src="img/tiles/6-3.webp" class="nav-unit-tile-s" alt="Community">
                                         <span class="nav-unit-title-s"> Community giving </span>
                                     </div>
                                 </a>
@@ -465,262 +470,262 @@
                     <div class="stack-logos">
                         <div class="stack-row stack-row-top">
                             <div class="stack-track">
-                                <img src="img/python.png" alt="Python" data-project="ML Model Pipeline"
+                                <img loading="lazy" decoding="async" src="img/python.webp" alt="Python" data-project="ML Model Pipeline"
                                     data-impact="Reduced model training time by 35% with optimized data preprocessing">
-                                <img src="img/pytorch.jpg" alt="PyTorch" data-project="Deep Learning Framework"
+                                <img loading="lazy" decoding="async" src="img/pytorch.webp" alt="PyTorch" data-project="Deep Learning Framework"
                                     data-impact="Improved model accuracy by 12% using custom loss functions">
-                                <img src="img/LangChain_Logo.png" alt="LangChain" data-project="RAG Copilot System"
+                                <img loading="lazy" decoding="async" src="img/LangChain_Logo.webp" alt="LangChain" data-project="RAG Copilot System"
                                     data-impact="Increased support ticket resolution rate by 45% with AI assistance">
-                                <img src="img/llama_index.png" alt="LlamaIndex" data-project="Knowledge Base Indexing"
+                                <img loading="lazy" decoding="async" src="img/llama_index.webp" alt="LlamaIndex" data-project="Knowledge Base Indexing"
                                     data-impact="Reduced search latency from 2.5s to 0.3s with vector embeddings">
-                                <img src="img/lang_graph.svg" alt="LangGraph" data-project="Multi-Agent Workflow"
+                                <img loading="lazy" decoding="async" src="img/lang_graph.svg" alt="LangGraph" data-project="Multi-Agent Workflow"
                                     data-impact="Automated 60% of manual document processing tasks">
-                                <img src="img/aws%20ec2.png" alt="AWS EC2" data-project="Cloud Infrastructure"
+                                <img loading="lazy" decoding="async" src="img/aws%20ec2.webp" alt="AWS EC2" data-project="Cloud Infrastructure"
                                     data-impact="Reduced infrastructure costs by 28% with auto-scaling">
-                                <img src="img/aws%20lambda.png" alt="AWS Lambda" data-project="Serverless Functions"
+                                <img loading="lazy" decoding="async" src="img/aws%20lambda.webp" alt="AWS Lambda" data-project="Serverless Functions"
                                     data-impact="Cut API response time by 50% with event-driven architecture">
-                                <img src="img/aws%20s3.png" alt="AWS S3" data-project="Data Lake Storage"
+                                <img loading="lazy" decoding="async" src="img/aws%20s3.webp" alt="AWS S3" data-project="Data Lake Storage"
                                     data-impact="Stored 2TB+ of training data with 99.9% availability">
-                                <img src="img/aws%20bedrock.png" alt="AWS Bedrock" data-project="GenAI Integration"
+                                <img loading="lazy" decoding="async" src="img/aws%20bedrock.webp" alt="AWS Bedrock" data-project="GenAI Integration"
                                     data-impact="Deployed LLM features 3x faster with managed APIs">
-                                <img src="img/Docker-Logo.png" alt="Docker" data-project="Containerization"
+                                <img loading="lazy" decoding="async" src="img/Docker-Logo.webp" alt="Docker" data-project="Containerization"
                                     data-impact="Standardized deployments across 5+ environments">
-                                <img src="img/kube.png" alt="Kubernetes" data-project="Container Orchestration"
+                                <img loading="lazy" decoding="async" src="img/kube.webp" alt="Kubernetes" data-project="Container Orchestration"
                                     data-impact="Achieved 99.95% uptime with automated failover">
-                                <img src="img/kafka.png" alt="Kafka" data-project="Streaming Pipeline"
+                                <img loading="lazy" decoding="async" src="img/kafka.webp" alt="Kafka" data-project="Streaming Pipeline"
                                     data-impact="Reduced lag in Kafka pipeline by 40% with optimized consumers">
-                                <img src="img/airflow.png" alt="Airflow" data-project="Workflow Automation"
+                                <img loading="lazy" decoding="async" src="img/airflow.webp" alt="Airflow" data-project="Workflow Automation"
                                     data-impact="Automated 20+ daily ETL jobs with 95% success rate">
-                                <img src="img/sql.png" alt="SQL" data-project="Database Queries"
+                                <img loading="lazy" decoding="async" src="img/sql.webp" alt="SQL" data-project="Database Queries"
                                     data-impact="Optimized queries reducing execution time by 65%">
-                                <img src="img/no_sql.webp" alt="NoSQL" data-project="Document Store"
+                                <img loading="lazy" decoding="async" src="img/no_sql.webp" alt="NoSQL" data-project="Document Store"
                                     data-impact="Handled 10M+ transactions with sub-10ms latency">
-                                <img src="img/chromadb.png" alt="ChromaDB" data-project="Vector Database"
+                                <img loading="lazy" decoding="async" src="img/chromadb.webp" alt="ChromaDB" data-project="Vector Database"
                                     data-impact="Enabled semantic search with 0.2s average query time">
-                                <img src="img/mlflow.png" alt="MLflow" data-project="ML Experiment Tracking"
+                                <img loading="lazy" decoding="async" src="img/mlflow.webp" alt="MLflow" data-project="ML Experiment Tracking"
                                     data-impact="Tracked 500+ model experiments with version control">
-                                <img src="img/pinecone.jpg" alt="Pinecone" data-project="Vector Search"
+                                <img loading="lazy" decoding="async" src="img/pinecone.webp" alt="Pinecone" data-project="Vector Search"
                                     data-impact="Scaled to 1M+ embeddings with 99.9% recall">
-                                <img src="img/pgvector.svg" alt="pgvector" data-project="PostgreSQL Vectors"
+                                <img loading="lazy" decoding="async" src="img/pgvector.svg" alt="pgvector" data-project="PostgreSQL Vectors"
                                     data-impact="Integrated vector search into existing SQL workflows">
-                                <img src="img/n8n.png" alt="n8n" data-project="Workflow Automation"
+                                <img loading="lazy" decoding="async" src="img/n8n.webp" alt="n8n" data-project="Workflow Automation"
                                     data-impact="Automated 15+ manual processes saving 20 hours/week">
-                                <img src="img/rest_api.png" alt="REST API" data-project="API Development"
+                                <img loading="lazy" decoding="async" src="img/rest_api.webp" alt="REST API" data-project="API Development"
                                     data-impact="Built 12+ endpoints serving 1M+ requests/day">
-                                <img src="img/postman.png" alt="Postman" data-project="API Testing"
+                                <img loading="lazy" decoding="async" src="img/postman.webp" alt="Postman" data-project="API Testing"
                                     data-impact="Reduced API bug rate by 30% with automated tests">
-                                <img src="img/Prometheus.webp" alt="Prometheus" data-project="Metrics Monitoring"
+                                <img loading="lazy" decoding="async" src="img/Prometheus.webp" alt="Prometheus" data-project="Metrics Monitoring"
                                     data-impact="Reduced MTTR by 50% with real-time alerts">
-                                <img src="img/Grafana_loki_logo.png" alt="Loki" data-project="Log Aggregation"
+                                <img loading="lazy" decoding="async" src="img/Grafana_loki_logo.webp" alt="Loki" data-project="Log Aggregation"
                                     data-impact="Centralized 100GB+ logs with fast search">
-                                <img src="img/yahoo_finance.webp" alt="Yahoo Finance"
+                                <img loading="lazy" decoding="async" src="img/yahoo_finance.webp" alt="Yahoo Finance"
                                     data-project="Financial Data Pipeline"
                                     data-impact="Ingested 50K+ daily market data points">
-                                <img src="img/Git.png" alt="Git" data-project="Version Control"
+                                <img loading="lazy" decoding="async" src="img/Git.webp" alt="Git" data-project="Version Control"
                                     data-impact="Managed 200+ commits across 10+ repositories">
-                                <img src="img/GitHub_Copilot.png" alt="GitHub Copilot"
+                                <img loading="lazy" decoding="async" src="img/GitHub_Copilot.webp" alt="GitHub Copilot"
                                     data-project="AI Pair Programming" data-impact="Increased coding velocity by 25%">
-                                <img src="img/selenium.png" alt="Selenium" data-project="Web Automation"
+                                <img loading="lazy" decoding="async" src="img/selenium.webp" alt="Selenium" data-project="Web Automation"
                                     data-impact="Automated 30+ test scenarios reducing QA time">
-                                <img src="img/mcp.jpg" alt="MCP" data-project="Model Context Protocol"
+                                <img loading="lazy" decoding="async" src="img/mcp.webp" alt="MCP" data-project="Model Context Protocol"
                                     data-impact="Enhanced AI agent capabilities with structured data">
-                                <img src="img/ollama.png" alt="Ollama" data-project="Local LLM Deployment"
+                                <img loading="lazy" decoding="async" src="img/ollama.webp" alt="Ollama" data-project="Local LLM Deployment"
                                     data-impact="Deployed private LLMs with 40% cost reduction">
-                                <img src="img/aplaca.webp" alt="Alpaca" data-project="Fine-Tuned Models"
+                                <img loading="lazy" decoding="async" src="img/aplaca.webp" alt="Alpaca" data-project="Fine-Tuned Models"
                                     data-impact="Customized models for domain-specific tasks">
                                 <!-- duplicate sequence for seamless scroll -->
-                                <img src="img/python.png" alt="Python" data-project="ML Model Pipeline"
+                                <img loading="lazy" decoding="async" src="img/python.webp" alt="Python" data-project="ML Model Pipeline"
                                     data-impact="Reduced model training time by 35% with optimized data preprocessing">
-                                <img src="img/pytorch.jpg" alt="PyTorch" data-project="Deep Learning Framework"
+                                <img loading="lazy" decoding="async" src="img/pytorch.webp" alt="PyTorch" data-project="Deep Learning Framework"
                                     data-impact="Improved model accuracy by 12% using custom loss functions">
-                                <img src="img/LangChain_Logo.png" alt="LangChain" data-project="RAG Copilot System"
+                                <img loading="lazy" decoding="async" src="img/LangChain_Logo.webp" alt="LangChain" data-project="RAG Copilot System"
                                     data-impact="Increased support ticket resolution rate by 45% with AI assistance">
-                                <img src="img/llama_index.png" alt="LlamaIndex" data-project="Knowledge Base Indexing"
+                                <img loading="lazy" decoding="async" src="img/llama_index.webp" alt="LlamaIndex" data-project="Knowledge Base Indexing"
                                     data-impact="Reduced search latency from 2.5s to 0.3s with vector embeddings">
-                                <img src="img/lang_graph.svg" alt="LangGraph" data-project="Multi-Agent Workflow"
+                                <img loading="lazy" decoding="async" src="img/lang_graph.svg" alt="LangGraph" data-project="Multi-Agent Workflow"
                                     data-impact="Automated 60% of manual document processing tasks">
-                                <img src="img/aws%20ec2.png" alt="AWS EC2" data-project="Cloud Infrastructure"
+                                <img loading="lazy" decoding="async" src="img/aws%20ec2.webp" alt="AWS EC2" data-project="Cloud Infrastructure"
                                     data-impact="Reduced infrastructure costs by 28% with auto-scaling">
-                                <img src="img/aws%20lambda.png" alt="AWS Lambda" data-project="Serverless Functions"
+                                <img loading="lazy" decoding="async" src="img/aws%20lambda.webp" alt="AWS Lambda" data-project="Serverless Functions"
                                     data-impact="Cut API response time by 50% with event-driven architecture">
-                                <img src="img/aws%20s3.png" alt="AWS S3" data-project="Data Lake Storage"
+                                <img loading="lazy" decoding="async" src="img/aws%20s3.webp" alt="AWS S3" data-project="Data Lake Storage"
                                     data-impact="Stored 2TB+ of training data with 99.9% availability">
-                                <img src="img/aws%20bedrock.png" alt="AWS Bedrock" data-project="GenAI Integration"
+                                <img loading="lazy" decoding="async" src="img/aws%20bedrock.webp" alt="AWS Bedrock" data-project="GenAI Integration"
                                     data-impact="Deployed LLM features 3x faster with managed APIs">
-                                <img src="img/Docker-Logo.png" alt="Docker" data-project="Containerization"
+                                <img loading="lazy" decoding="async" src="img/Docker-Logo.webp" alt="Docker" data-project="Containerization"
                                     data-impact="Standardized deployments across 5+ environments">
-                                <img src="img/kube.png" alt="Kubernetes" data-project="Container Orchestration"
+                                <img loading="lazy" decoding="async" src="img/kube.webp" alt="Kubernetes" data-project="Container Orchestration"
                                     data-impact="Achieved 99.95% uptime with automated failover">
-                                <img src="img/kafka.png" alt="Kafka" data-project="Streaming Pipeline"
+                                <img loading="lazy" decoding="async" src="img/kafka.webp" alt="Kafka" data-project="Streaming Pipeline"
                                     data-impact="Reduced lag in Kafka pipeline by 40% with optimized consumers">
-                                <img src="img/airflow.png" alt="Airflow" data-project="Workflow Automation"
+                                <img loading="lazy" decoding="async" src="img/airflow.webp" alt="Airflow" data-project="Workflow Automation"
                                     data-impact="Automated 20+ daily ETL jobs with 95% success rate">
-                                <img src="img/sql.png" alt="SQL" data-project="Database Queries"
+                                <img loading="lazy" decoding="async" src="img/sql.webp" alt="SQL" data-project="Database Queries"
                                     data-impact="Optimized queries reducing execution time by 65%">
-                                <img src="img/no_sql.webp" alt="NoSQL" data-project="Document Store"
+                                <img loading="lazy" decoding="async" src="img/no_sql.webp" alt="NoSQL" data-project="Document Store"
                                     data-impact="Handled 10M+ transactions with sub-10ms latency">
-                                <img src="img/chromadb.png" alt="ChromaDB" data-project="Vector Database"
+                                <img loading="lazy" decoding="async" src="img/chromadb.webp" alt="ChromaDB" data-project="Vector Database"
                                     data-impact="Enabled semantic search with 0.2s average query time">
-                                <img src="img/mlflow.png" alt="MLflow" data-project="ML Experiment Tracking"
+                                <img loading="lazy" decoding="async" src="img/mlflow.webp" alt="MLflow" data-project="ML Experiment Tracking"
                                     data-impact="Tracked 500+ model experiments with version control">
-                                <img src="img/pinecone.jpg" alt="Pinecone" data-project="Vector Search"
+                                <img loading="lazy" decoding="async" src="img/pinecone.webp" alt="Pinecone" data-project="Vector Search"
                                     data-impact="Scaled to 1M+ embeddings with 99.9% recall">
-                                <img src="img/pgvector.svg" alt="pgvector" data-project="PostgreSQL Vectors"
+                                <img loading="lazy" decoding="async" src="img/pgvector.svg" alt="pgvector" data-project="PostgreSQL Vectors"
                                     data-impact="Integrated vector search into existing SQL workflows">
-                                <img src="img/n8n.png" alt="n8n" data-project="Workflow Automation"
+                                <img loading="lazy" decoding="async" src="img/n8n.webp" alt="n8n" data-project="Workflow Automation"
                                     data-impact="Automated 15+ manual processes saving 20 hours/week">
-                                <img src="img/rest_api.png" alt="REST API" data-project="API Development"
+                                <img loading="lazy" decoding="async" src="img/rest_api.webp" alt="REST API" data-project="API Development"
                                     data-impact="Built 12+ endpoints serving 1M+ requests/day">
-                                <img src="img/postman.png" alt="Postman" data-project="API Testing"
+                                <img loading="lazy" decoding="async" src="img/postman.webp" alt="Postman" data-project="API Testing"
                                     data-impact="Reduced API bug rate by 30% with automated tests">
-                                <img src="img/Prometheus.webp" alt="Prometheus" data-project="Metrics Monitoring"
+                                <img loading="lazy" decoding="async" src="img/Prometheus.webp" alt="Prometheus" data-project="Metrics Monitoring"
                                     data-impact="Reduced MTTR by 50% with real-time alerts">
-                                <img src="img/Grafana_loki_logo.png" alt="Loki" data-project="Log Aggregation"
+                                <img loading="lazy" decoding="async" src="img/Grafana_loki_logo.webp" alt="Loki" data-project="Log Aggregation"
                                     data-impact="Centralized 100GB+ logs with fast search">
-                                <img src="img/yahoo_finance.webp" alt="Yahoo Finance"
+                                <img loading="lazy" decoding="async" src="img/yahoo_finance.webp" alt="Yahoo Finance"
                                     data-project="Financial Data Pipeline"
                                     data-impact="Ingested 50K+ daily market data points">
-                                <img src="img/Git.png" alt="Git" data-project="Version Control"
+                                <img loading="lazy" decoding="async" src="img/Git.webp" alt="Git" data-project="Version Control"
                                     data-impact="Managed 200+ commits across 10+ repositories">
-                                <img src="img/GitHub_Copilot.png" alt="GitHub Copilot"
+                                <img loading="lazy" decoding="async" src="img/GitHub_Copilot.webp" alt="GitHub Copilot"
                                     data-project="AI Pair Programming" data-impact="Increased coding velocity by 25%">
-                                <img src="img/selenium.png" alt="Selenium" data-project="Web Automation"
+                                <img loading="lazy" decoding="async" src="img/selenium.webp" alt="Selenium" data-project="Web Automation"
                                     data-impact="Automated 30+ test scenarios reducing QA time">
-                                <img src="img/mcp.jpg" alt="MCP" data-project="Model Context Protocol"
+                                <img loading="lazy" decoding="async" src="img/mcp.webp" alt="MCP" data-project="Model Context Protocol"
                                     data-impact="Enhanced AI agent capabilities with structured data">
-                                <img src="img/ollama.png" alt="Ollama" data-project="Local LLM Deployment"
+                                <img loading="lazy" decoding="async" src="img/ollama.webp" alt="Ollama" data-project="Local LLM Deployment"
                                     data-impact="Deployed private LLMs with 40% cost reduction">
-                                <img src="img/aplaca.webp" alt="Alpaca" data-project="Fine-Tuned Models"
+                                <img loading="lazy" decoding="async" src="img/aplaca.webp" alt="Alpaca" data-project="Fine-Tuned Models"
                                     data-impact="Customized models for domain-specific tasks">
                             </div>
                         </div>
 
                         <div class="stack-row stack-row-bottom">
                             <div class="stack-track">
-                                <img src="img/airflow.png" alt="Airflow" data-project="Workflow Automation"
+                                <img loading="lazy" decoding="async" src="img/airflow.webp" alt="Airflow" data-project="Workflow Automation"
                                     data-impact="Automated 20+ daily ETL jobs with 95% success rate">
-                                <img src="img/kafka.png" alt="Kafka" data-project="Streaming Pipeline"
+                                <img loading="lazy" decoding="async" src="img/kafka.webp" alt="Kafka" data-project="Streaming Pipeline"
                                     data-impact="Reduced lag in Kafka pipeline by 40% with optimized consumers">
-                                <img src="img/Grafana_loki_logo.png" alt="Loki" data-project="Log Aggregation"
+                                <img loading="lazy" decoding="async" src="img/Grafana_loki_logo.webp" alt="Loki" data-project="Log Aggregation"
                                     data-impact="Centralized 100GB+ logs with fast search">
-                                <img src="img/Prometheus.webp" alt="Prometheus" data-project="Metrics Monitoring"
+                                <img loading="lazy" decoding="async" src="img/Prometheus.webp" alt="Prometheus" data-project="Metrics Monitoring"
                                     data-impact="Reduced MTTR by 50% with real-time alerts">
-                                <img src="img/sql.png" alt="SQL" data-project="Database Queries"
+                                <img loading="lazy" decoding="async" src="img/sql.webp" alt="SQL" data-project="Database Queries"
                                     data-impact="Optimized queries reducing execution time by 65%">
-                                <img src="img/no_sql.webp" alt="NoSQL" data-project="Document Store"
+                                <img loading="lazy" decoding="async" src="img/no_sql.webp" alt="NoSQL" data-project="Document Store"
                                     data-impact="Handled 10M+ transactions with sub-10ms latency">
-                                <img src="img/chromadb.png" alt="ChromaDB" data-project="Vector Database"
+                                <img loading="lazy" decoding="async" src="img/chromadb.webp" alt="ChromaDB" data-project="Vector Database"
                                     data-impact="Enabled semantic search with 0.2s average query time">
-                                <img src="img/pinecone.jpg" alt="Pinecone" data-project="Vector Search"
+                                <img loading="lazy" decoding="async" src="img/pinecone.webp" alt="Pinecone" data-project="Vector Search"
                                     data-impact="Scaled to 1M+ embeddings with 99.9% recall">
-                                <img src="img/pgvector.svg" alt="pgvector" data-project="PostgreSQL Vectors"
+                                <img loading="lazy" decoding="async" src="img/pgvector.svg" alt="pgvector" data-project="PostgreSQL Vectors"
                                     data-impact="Integrated vector search into existing SQL workflows">
-                                <img src="img/yahoo_finance.webp" alt="Yahoo Finance"
+                                <img loading="lazy" decoding="async" src="img/yahoo_finance.webp" alt="Yahoo Finance"
                                     data-project="Financial Data Pipeline"
                                     data-impact="Ingested 50K+ daily market data points">
-                                <img src="img/LangChain_Logo.png" alt="LangChain" data-project="RAG Copilot System"
+                                <img loading="lazy" decoding="async" src="img/LangChain_Logo.webp" alt="LangChain" data-project="RAG Copilot System"
                                     data-impact="Increased support ticket resolution rate by 45% with AI assistance">
-                                <img src="img/llama_index.png" alt="LlamaIndex" data-project="Knowledge Base Indexing"
+                                <img loading="lazy" decoding="async" src="img/llama_index.webp" alt="LlamaIndex" data-project="Knowledge Base Indexing"
                                     data-impact="Reduced search latency from 2.5s to 0.3s with vector embeddings">
-                                <img src="img/lang_graph.svg" alt="LangGraph" data-project="Multi-Agent Workflow"
+                                <img loading="lazy" decoding="async" src="img/lang_graph.svg" alt="LangGraph" data-project="Multi-Agent Workflow"
                                     data-impact="Automated 60% of manual document processing tasks">
-                                <img src="img/n8n.png" alt="n8n" data-project="Workflow Automation"
+                                <img loading="lazy" decoding="async" src="img/n8n.webp" alt="n8n" data-project="Workflow Automation"
                                     data-impact="Automated 15+ manual processes saving 20 hours/week">
-                                <img src="img/rest_api.png" alt="REST API" data-project="API Development"
+                                <img loading="lazy" decoding="async" src="img/rest_api.webp" alt="REST API" data-project="API Development"
                                     data-impact="Built 12+ endpoints serving 1M+ requests/day">
-                                <img src="img/mlflow.png" alt="MLflow" data-project="ML Experiment Tracking"
+                                <img loading="lazy" decoding="async" src="img/mlflow.webp" alt="MLflow" data-project="ML Experiment Tracking"
                                     data-impact="Tracked 500+ model experiments with version control">
-                                <img src="img/postman.png" alt="Postman" data-project="API Testing"
+                                <img loading="lazy" decoding="async" src="img/postman.webp" alt="Postman" data-project="API Testing"
                                     data-impact="Reduced API bug rate by 30% with automated tests">
-                                <img src="img/aws%20ec2.png" alt="AWS EC2" data-project="Cloud Infrastructure"
+                                <img loading="lazy" decoding="async" src="img/aws%20ec2.webp" alt="AWS EC2" data-project="Cloud Infrastructure"
                                     data-impact="Reduced infrastructure costs by 28% with auto-scaling">
-                                <img src="img/aws%20lambda.png" alt="AWS Lambda" data-project="Serverless Functions"
+                                <img loading="lazy" decoding="async" src="img/aws%20lambda.webp" alt="AWS Lambda" data-project="Serverless Functions"
                                     data-impact="Cut API response time by 50% with event-driven architecture">
-                                <img src="img/aws%20s3.png" alt="AWS S3" data-project="Data Lake Storage"
+                                <img loading="lazy" decoding="async" src="img/aws%20s3.webp" alt="AWS S3" data-project="Data Lake Storage"
                                     data-impact="Stored 2TB+ of training data with 99.9% availability">
-                                <img src="img/aws%20bedrock.png" alt="AWS Bedrock" data-project="GenAI Integration"
+                                <img loading="lazy" decoding="async" src="img/aws%20bedrock.webp" alt="AWS Bedrock" data-project="GenAI Integration"
                                     data-impact="Deployed LLM features 3x faster with managed APIs">
-                                <img src="img/Docker-Logo.png" alt="Docker" data-project="Containerization"
+                                <img loading="lazy" decoding="async" src="img/Docker-Logo.webp" alt="Docker" data-project="Containerization"
                                     data-impact="Standardized deployments across 5+ environments">
-                                <img src="img/kube.png" alt="Kubernetes" data-project="Container Orchestration"
+                                <img loading="lazy" decoding="async" src="img/kube.webp" alt="Kubernetes" data-project="Container Orchestration"
                                     data-impact="Achieved 99.95% uptime with automated failover">
-                                <img src="img/Git.png" alt="Git" data-project="Version Control"
+                                <img loading="lazy" decoding="async" src="img/Git.webp" alt="Git" data-project="Version Control"
                                     data-impact="Managed 200+ commits across 10+ repositories">
-                                <img src="img/GitHub_Copilot.png" alt="GitHub Copilot"
+                                <img loading="lazy" decoding="async" src="img/GitHub_Copilot.webp" alt="GitHub Copilot"
                                     data-project="AI Pair Programming" data-impact="Increased coding velocity by 25%">
-                                <img src="img/python.png" alt="Python" data-project="ML Model Pipeline"
+                                <img loading="lazy" decoding="async" src="img/python.webp" alt="Python" data-project="ML Model Pipeline"
                                     data-impact="Reduced model training time by 35% with optimized data preprocessing">
-                                <img src="img/pytorch.jpg" alt="PyTorch" data-project="Deep Learning Framework"
+                                <img loading="lazy" decoding="async" src="img/pytorch.webp" alt="PyTorch" data-project="Deep Learning Framework"
                                     data-impact="Improved model accuracy by 12% using custom loss functions">
-                                <img src="img/selenium.png" alt="Selenium" data-project="Web Automation"
+                                <img loading="lazy" decoding="async" src="img/selenium.webp" alt="Selenium" data-project="Web Automation"
                                     data-impact="Automated 30+ test scenarios reducing QA time">
-                                <img src="img/mcp.jpg" alt="MCP" data-project="Model Context Protocol"
+                                <img loading="lazy" decoding="async" src="img/mcp.webp" alt="MCP" data-project="Model Context Protocol"
                                     data-impact="Enhanced AI agent capabilities with structured data">
-                                <img src="img/ollama.png" alt="Ollama" data-project="Local LLM Deployment"
+                                <img loading="lazy" decoding="async" src="img/ollama.webp" alt="Ollama" data-project="Local LLM Deployment"
                                     data-impact="Deployed private LLMs with 40% cost reduction">
-                                <img src="img/aplaca.webp" alt="Alpaca" data-project="Fine-Tuned Models"
+                                <img loading="lazy" decoding="async" src="img/aplaca.webp" alt="Alpaca" data-project="Fine-Tuned Models"
                                     data-impact="Customized models for domain-specific tasks">
                                 <!-- duplicate sequence for seamless scroll -->
-                                <img src="img/airflow.png" alt="Airflow" data-project="Workflow Automation"
+                                <img loading="lazy" decoding="async" src="img/airflow.webp" alt="Airflow" data-project="Workflow Automation"
                                     data-impact="Automated 20+ daily ETL jobs with 95% success rate">
-                                <img src="img/kafka.png" alt="Kafka" data-project="Streaming Pipeline"
+                                <img loading="lazy" decoding="async" src="img/kafka.webp" alt="Kafka" data-project="Streaming Pipeline"
                                     data-impact="Reduced lag in Kafka pipeline by 40% with optimized consumers">
-                                <img src="img/Grafana_loki_logo.png" alt="Loki" data-project="Log Aggregation"
+                                <img loading="lazy" decoding="async" src="img/Grafana_loki_logo.webp" alt="Loki" data-project="Log Aggregation"
                                     data-impact="Centralized 100GB+ logs with fast search">
-                                <img src="img/Prometheus.webp" alt="Prometheus" data-project="Metrics Monitoring"
+                                <img loading="lazy" decoding="async" src="img/Prometheus.webp" alt="Prometheus" data-project="Metrics Monitoring"
                                     data-impact="Reduced MTTR by 50% with real-time alerts">
-                                <img src="img/sql.png" alt="SQL" data-project="Database Queries"
+                                <img loading="lazy" decoding="async" src="img/sql.webp" alt="SQL" data-project="Database Queries"
                                     data-impact="Optimized queries reducing execution time by 65%">
-                                <img src="img/no_sql.webp" alt="NoSQL" data-project="Document Store"
+                                <img loading="lazy" decoding="async" src="img/no_sql.webp" alt="NoSQL" data-project="Document Store"
                                     data-impact="Handled 10M+ transactions with sub-10ms latency">
-                                <img src="img/chromadb.png" alt="ChromaDB" data-project="Vector Database"
+                                <img loading="lazy" decoding="async" src="img/chromadb.webp" alt="ChromaDB" data-project="Vector Database"
                                     data-impact="Enabled semantic search with 0.2s average query time">
-                                <img src="img/pinecone.jpg" alt="Pinecone" data-project="Vector Search"
+                                <img loading="lazy" decoding="async" src="img/pinecone.webp" alt="Pinecone" data-project="Vector Search"
                                     data-impact="Scaled to 1M+ embeddings with 99.9% recall">
-                                <img src="img/pgvector.svg" alt="pgvector" data-project="PostgreSQL Vectors"
+                                <img loading="lazy" decoding="async" src="img/pgvector.svg" alt="pgvector" data-project="PostgreSQL Vectors"
                                     data-impact="Integrated vector search into existing SQL workflows">
-                                <img src="img/yahoo_finance.webp" alt="Yahoo Finance"
+                                <img loading="lazy" decoding="async" src="img/yahoo_finance.webp" alt="Yahoo Finance"
                                     data-project="Financial Data Pipeline"
                                     data-impact="Ingested 50K+ daily market data points">
-                                <img src="img/LangChain_Logo.png" alt="LangChain" data-project="RAG Copilot System"
+                                <img loading="lazy" decoding="async" src="img/LangChain_Logo.webp" alt="LangChain" data-project="RAG Copilot System"
                                     data-impact="Increased support ticket resolution rate by 45% with AI assistance">
-                                <img src="img/llama_index.png" alt="LlamaIndex" data-project="Knowledge Base Indexing"
+                                <img loading="lazy" decoding="async" src="img/llama_index.webp" alt="LlamaIndex" data-project="Knowledge Base Indexing"
                                     data-impact="Reduced search latency from 2.5s to 0.3s with vector embeddings">
-                                <img src="img/lang_graph.svg" alt="LangGraph" data-project="Multi-Agent Workflow"
+                                <img loading="lazy" decoding="async" src="img/lang_graph.svg" alt="LangGraph" data-project="Multi-Agent Workflow"
                                     data-impact="Automated 60% of manual document processing tasks">
-                                <img src="img/n8n.png" alt="n8n" data-project="Workflow Automation"
+                                <img loading="lazy" decoding="async" src="img/n8n.webp" alt="n8n" data-project="Workflow Automation"
                                     data-impact="Automated 15+ manual processes saving 20 hours/week">
-                                <img src="img/rest_api.png" alt="REST API" data-project="API Development"
+                                <img loading="lazy" decoding="async" src="img/rest_api.webp" alt="REST API" data-project="API Development"
                                     data-impact="Built 12+ endpoints serving 1M+ requests/day">
-                                <img src="img/postman.png" alt="Postman" data-project="API Testing"
+                                <img loading="lazy" decoding="async" src="img/postman.webp" alt="Postman" data-project="API Testing"
                                     data-impact="Reduced API bug rate by 30% with automated tests">
-                                <img src="img/aws%20ec2.png" alt="AWS EC2" data-project="Cloud Infrastructure"
+                                <img loading="lazy" decoding="async" src="img/aws%20ec2.webp" alt="AWS EC2" data-project="Cloud Infrastructure"
                                     data-impact="Reduced infrastructure costs by 28% with auto-scaling">
-                                <img src="img/aws%20lambda.png" alt="AWS Lambda" data-project="Serverless Functions"
+                                <img loading="lazy" decoding="async" src="img/aws%20lambda.webp" alt="AWS Lambda" data-project="Serverless Functions"
                                     data-impact="Cut API response time by 50% with event-driven architecture">
-                                <img src="img/aws%20s3.png" alt="AWS S3" data-project="Data Lake Storage"
+                                <img loading="lazy" decoding="async" src="img/aws%20s3.webp" alt="AWS S3" data-project="Data Lake Storage"
                                     data-impact="Stored 2TB+ of training data with 99.9% availability">
-                                <img src="img/aws%20bedrock.png" alt="AWS Bedrock" data-project="GenAI Integration"
+                                <img loading="lazy" decoding="async" src="img/aws%20bedrock.webp" alt="AWS Bedrock" data-project="GenAI Integration"
                                     data-impact="Deployed LLM features 3x faster with managed APIs">
-                                <img src="img/Docker-Logo.png" alt="Docker" data-project="Containerization"
+                                <img loading="lazy" decoding="async" src="img/Docker-Logo.webp" alt="Docker" data-project="Containerization"
                                     data-impact="Standardized deployments across 5+ environments">
-                                <img src="img/kube.png" alt="Kubernetes" data-project="Container Orchestration"
+                                <img loading="lazy" decoding="async" src="img/kube.webp" alt="Kubernetes" data-project="Container Orchestration"
                                     data-impact="Achieved 99.95% uptime with automated failover">
-                                <img src="img/Git.png" alt="Git" data-project="Version Control"
+                                <img loading="lazy" decoding="async" src="img/Git.webp" alt="Git" data-project="Version Control"
                                     data-impact="Managed 200+ commits across 10+ repositories">
-                                <img src="img/GitHub_Copilot.png" alt="GitHub Copilot"
+                                <img loading="lazy" decoding="async" src="img/GitHub_Copilot.webp" alt="GitHub Copilot"
                                     data-project="AI Pair Programming" data-impact="Increased coding velocity by 25%">
-                                <img src="img/python.png" alt="Python" data-project="ML Model Pipeline"
+                                <img loading="lazy" decoding="async" src="img/python.webp" alt="Python" data-project="ML Model Pipeline"
                                     data-impact="Reduced model training time by 35% with optimized data preprocessing">
-                                <img src="img/pytorch.jpg" alt="PyTorch" data-project="Deep Learning Framework"
+                                <img loading="lazy" decoding="async" src="img/pytorch.webp" alt="PyTorch" data-project="Deep Learning Framework"
                                     data-impact="Improved model accuracy by 12% using custom loss functions">
-                                <img src="img/selenium.png" alt="Selenium" data-project="Web Automation"
+                                <img loading="lazy" decoding="async" src="img/selenium.webp" alt="Selenium" data-project="Web Automation"
                                     data-impact="Automated 30+ test scenarios reducing QA time">
-                                <img src="img/mcp.jpg" alt="MCP" data-project="Model Context Protocol"
+                                <img loading="lazy" decoding="async" src="img/mcp.webp" alt="MCP" data-project="Model Context Protocol"
                                     data-impact="Enhanced AI agent capabilities with structured data">
-                                <img src="img/ollama.png" alt="Ollama" data-project="Local LLM Deployment"
+                                <img loading="lazy" decoding="async" src="img/ollama.webp" alt="Ollama" data-project="Local LLM Deployment"
                                     data-impact="Deployed private LLMs with 40% cost reduction">
-                                <img src="img/aplaca.webp" alt="Alpaca" data-project="Fine-Tuned Models"
+                                <img loading="lazy" decoding="async" src="img/aplaca.webp" alt="Alpaca" data-project="Fine-Tuned Models"
                                     data-impact="Customized models for domain-specific tasks">
                             </div>
                         </div>
